@@ -3,7 +3,7 @@ package com.dasayantist.msacco.app;
 import android.app.Application;
 
 import com.android.volley.Request;
-import com.android.volley.RequestQueue; //volley.jar lai libs folder vitra paste garera, import as library gareko
+import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 
 /**
@@ -17,7 +17,7 @@ public class AppController extends Application{
     private RequestQueue mRequestQueue;
 
     private static AppController mInstance;
-    public static String baseUrl= "http://10.0.1.113/zsacco/";
+    public static String baseUrl = "http://192.168.0.109/zsacco/";
 
     @Override
     public void onCreate() {

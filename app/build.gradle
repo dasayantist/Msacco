@@ -35,4 +35,15 @@ dependencies {
     implementation files('libs/joda-time-2.1.jar')
     implementation files('libs/volley.jar')
     implementation project(':chowder')
+
+
+
+
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation 'com.google.firebase:firebase-database:16.0.1'
+    implementation 'com.google.firebase:firebase-auth:16.0.1'
+    implementation 'com.google.firebase:firebase-storage:16.0.1'
+
 }
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "573086199850",
+    "firebase_url": "https://msacco-f9f2f.firebaseio.com",
+    "project_id": "msacco-f9f2f",
+    "storage_bucket": "msacco-f9f2f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573086199850:android:fca741d78336a065",
+        "android_client_info": {
+          "package_name": "com.dasayantist.msacco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "573086199850-fth054ru9oj278b061rlm9o02r8tm9f8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dasayantist.msacco",
+            "certificate_hash": "bcf33e20e28bbd8e02834e663d819009272c4e6d"
+          }
+        },
+        {
+          "client_id": "573086199850-cdans3vhu10a9162qdhocvpiqqmae6vj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlMTC2A0KAJBMVGuOa8DJ0-u-tn9OMHLU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "573086199850-cdans3vhu10a9162qdhocvpiqqmae6vj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

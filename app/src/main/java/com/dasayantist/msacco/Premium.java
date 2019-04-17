@@ -14,30 +14,19 @@ import android.os.Bundle;
 import android.support.annotation.IntDef;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.CardView;
-import android.util.Log;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.ActionMode;
 import android.view.View;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.dasayantist.msacco.app.AppController;
 import com.dasayantist.msacco.interfaces.IMainActivityListener;
 import com.toe.chowder.Chowder;
 import com.toe.chowder.interfaces.PaymentListener;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -47,16 +36,8 @@ import java.lang.annotation.RetentionPolicy;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
-
-import com.android.volley.Request;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.VolleyLog;
-import com.android.volley.toolbox.JsonObjectRequest;
 
 public class Premium extends BaseActivity implements PaymentListener, IMainActivityListener {
 
@@ -66,85 +47,85 @@ public class Premium extends BaseActivity implements PaymentListener, IMainActiv
 
     public static final int NAVIGATION_MODE_STANDARD = 0;
     public static final int NAVIGATION_MODE_TABS = 1;
-    public static final String NAVIGATION_POSITION = "navigation_position";
-
-    private int mCurrentMode = NAVIGATION_MODE_STANDARD;
 
     //Test parameters you can replace these with your own PayBill details
     String PAYBILL_NUMBER = "877433";
     String PASSKEY = "be9dc35907bd98ee471bbfe9ddd87e724cdef18ac3eabfecdfd08f2cc4a5c3e0";
 
-    EditText  etPhoneNumber, etLAmount;
-    TextView acno, fname, pno, mtype;
-    TextView txtacno, txtfname, txtpno, txtmtype;
-    Button bPay, bConfirm, bAccess, mPay, pstatus, bLogin;
-    CardView cardparea;
+    EditText etLAmount, etPhoneNumber;
+    TextView txt_total, txt_principal, txt_interest, txt_penalty, txt_o_charges;
+    Button bPay, bConfirm, bAccess;
+
     int attempt_counter = 3;
     private static TextView attempts;
    // private PrefManager prefManager;
     private SharedPreference sharedPreference;
-    private String urlForJsonObject = AppController.baseUrl+"get_all_products.php";
-
-    //view products
-   private static String TAG = DBActivity.class.getSimpleName();
-
     //progress dialog
     private ProgressDialog pDialog;
-
-    private ListView productsList;
-    private TextView noConnection;
-    private TextView viewDescription;
-    private SwipeRefreshLayout swipeLayout;
-
-    //temporary string to show the parsed response
-    private String jsonResponse;
-
-
     Chowder chowder;
     String oid, rid, uid, add, od, ba;
-    private JSONObject json;
-    private String pid;
-
-
     private int success = 0;
-    private String path = "http://10.0.1.113/zsacco/order.php";
+    private String path = "http://192.168.0.109/zsacco/order.php";
+
+    public static boolean isNetworkStatusAvialable(Context context) {
+        ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        if (connectivityManager != null) {
+            NetworkInfo netInfos = connectivityManager.getActiveNetworkInfo();
+            if (netInfos != null)
+                return netInfos.isConnected();
+        }
+        return false;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_premium);
-        WebView webView = (WebView) findViewById(R.id.webViewMusic);
-        webView.getSettings().setJavaScriptEnabled(true);
-        WebSettings webSettings=webView.getSettings();
-        webSettings.setDefaultTextEncodingName("utf-8");
-        webView.loadUrl("file:///android_asset/MusicContent.html");
+//        WebView webView =  findViewById(R.id.webViewMusic);
+//        webView.getSettings().setJavaScriptEnabled(true);
+//        WebSettings webSettings=webView.getSettings();
+//        webSettings.setDefaultTextEncodingName("utf-8");
+//        webView.loadUrl("file:///android_asset/MusicContent.html");
 
         pDialog = new ProgressDialog(this);
         pDialog.setMessage("Please Wait....");
         pDialog.setCancelable(false);
 
+        txt_total = findViewById(R.id.txt_total);
+        txt_principal = findViewById(R.id.txt_principal);
+        txt_interest = findViewById(R.id.txt_interest);
+        txt_penalty = findViewById(R.id.txt_penalty);
+        txt_o_charges = findViewById(R.id.txt_O_charges);
+
+
+        Intent intent = getIntent();
+        Bundle extras = intent.getExtras();
+        if(extras != null) {
+            String loan_bal = extras.getString("loan_bal");
+            String loan_id = extras.getString("loan_id");
+            String penalty = extras.getString("penalty");
+            String interest = extras.getString("interest");
+            String total = extras.getString("total");
+
+
+            txt_total.setText(total);
+            txt_principal.setText(loan_bal);
+            txt_interest.setText(interest);
+            txt_penalty.setText(penalty);
+        }
         /*prefManager = new PrefManager(this);
         if (!prefManager.isFirstTimeLaunch()) {
             accessMainApp();
             finish();
         } */
-        productsList = (ListView) findViewById(R.id.listloan);
-        noConnection = (TextView) findViewById(R.id.no_connection);
-        viewDescription = (TextView) findViewById(R.id.view_description);
-//        swipeLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_layout);
-//        swipeLayout.setOnRefreshListener((SwipeRefreshLayout.OnRefreshListener) this);
 
-        pDialog = new ProgressDialog(this);
-        pDialog.setMessage("Please Wait....");
-        pDialog.setCancelable(false);
 
         if (checkForConnection()){
-            viewDescription.setVisibility(View.VISIBLE);
-            makeJsonObjectRequest();
+// do something here
         }
         else{
-            viewDescription.setVisibility(View.GONE);
-            noConnection.setVisibility(View.VISIBLE);
+//            viewDescription.setVisibility(View.GONE);
+//            noConnection.setVisibility(View.VISIBLE);
         }
 
 
@@ -152,60 +133,184 @@ public class Premium extends BaseActivity implements PaymentListener, IMainActiv
 
     }
 
+//
+
+    @Override
+    public void onDestroy() {
+        // You must call this or the ad adapter may cause a memory leak
+        super.onDestroy();
+    }
+
+    private Boolean checkForConnection() {
+        ConnectivityManager connectivityManager
+                = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
+    }
 
 
+    private void confirmLastPayment() {
+        SharedPreferences sp = getSharedPreferences(getPackageName(), MODE_PRIVATE);
+
+        //We saved the last transaction id to Shared Preferences
+        String transactionId = sp.getString("chowderTransactionId", null);
+
+        //Call chowder.checkTransactionStatus to check a transaction
+        //Check last transaction
+        if (transactionId != null) {
+            chowder.checkTransactionStatus(PAYBILL_NUMBER, transactionId);
+
+
+        } else {
+            Toast.makeText(getApplicationContext(), "No previous transaction available", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void accessApp() {
+        //SharedPreferences sp = getSharedPreferences(getPackageName(), MODE_PRIVATE);
+
+        //We saved the last transaction id to Shared Preferences
+        //String transactionStatus = sp.getString("transactionStatus", null);
+
+        //Call chowder.checkTransactionStatus to check a transaction
+        //Check last transaction
+        sharedPreference = new SharedPreference();
+        String transactionStatus;
+
+
+        //Retrieve a value from SharedPreference
+        Activity context = this;
+        transactionStatus = sharedPreference.getValue(context);
+
+
+        if (transactionStatus != null) {
+            //chowder.checkTransactionStatus(PAYBILL_NUMBER, transactionStatus);
+            Intent n = new Intent(Premium.this, MainActivity.class);
+            startActivity(n);
+
+        } else {
+            Toast.makeText(getApplicationContext(), "You haven't made payment yet.No transaction data available", Toast.LENGTH_LONG).show();
+            attempt_counter--;
+            attempts.setText(Integer.toString(attempt_counter));
+            if (attempt_counter == 0) {
+                bAccess.setEnabled(false);
+                android.app.AlertDialog.Builder a_builder = new android.app.AlertDialog.Builder(Premium.this);
+                a_builder.setMessage("Have you made your payment?").setCancelable(false)
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                android.app.AlertDialog.Builder a_builder = new android.app.AlertDialog.Builder(Premium.this);
+                                a_builder.setMessage("Ensure your internet connection is on,then click on the confirm payment button\n" +
+                                        "If your last transaction is shown on the screen ,restart app and login again\n" +
+                                        "if you dont get any message call:0729314341 for further assistance").setCancelable(false)
+
+                                        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+                                            public void onClick(DialogInterface dialog, int which) {
+                                                dialog.dismiss();
+                                            }
+                                        }).show();
+
+
+                            }
+                        })
+                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                android.app.AlertDialog.Builder a_builder = new android.app.AlertDialog.Builder(Premium.this);
+                                a_builder.setMessage("Ensure your internet connection is on,then  enter your phone number on the space provided\n" +
+                                        "click on the pay button..it is a mpesa payment method\n" +
+                                        "if your payment is successful ,restart app and press the login button").setCancelable(false)
+
+                                        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+                                            public void onClick(DialogInterface dialog, int which) {
+                                                dialog.dismiss();
+                                            }
+                                        }).show();
+                            }
+                        });
+
+                android.app.AlertDialog alert = a_builder.create();
+                alert.setTitle("Login Assistant");
+                alert.show();
+            }
+        }
+    }
 
     private void setUp() {
         chowder = new Chowder(Premium.this, PAYBILL_NUMBER, PASSKEY, this);
-
-
-        etLAmount = (EditText) findViewById(R.id.etLAmount) ;
-        etPhoneNumber = (EditText) findViewById(R.id.etPhoneNumber);
-
-        acno = (TextView) findViewById(R.id.acno);
-        fname = (TextView) findViewById(R.id.fname);
-        pno = (TextView) findViewById(R.id.pno);
-        mtype = (TextView) findViewById(R.id.mtype);
-
-
-        txtacno = (TextView) findViewById(R.id.txtacno);
-        txtfname = (TextView) findViewById(R.id.txtfname);
-        txtpno = (TextView) findViewById(R.id.txtpno);
-        txtmtype = (TextView) findViewById(R.id.txtmtype);
-
-
-
-        mPay =(Button) findViewById(R.id.mpay);
-        pstatus =(Button) findViewById(R.id.pstatus);
-        bPay = (Button) findViewById(R.id.bPay);
-        bConfirm = (Button) findViewById(R.id.bConfirm);
-        bAccess = (Button) findViewById(R.id.bAccess);
-        cardparea = (CardView) findViewById(R.id.cardparea) ;
-
-        attempts = (TextView)findViewById(R.id.textView_attemt_Count);
+        etLAmount = findViewById(R.id.etLAmount);
+        etPhoneNumber = findViewById(R.id.etPhoneNumber);
+        bPay = findViewById(R.id.bPay);
+        bConfirm = findViewById(R.id.bConfirm);
+        bAccess = findViewById(R.id.bAccess);
+        attempts = findViewById(R.id.textView_attemp_Count);
         attempts.setText(Integer.toString(attempt_counter));
 
 
-        mPay.setOnClickListener(new View.OnClickListener() {
+        etLAmount.addTextChangedListener(new TextWatcher() {
             @Override
-            public void onClick(View v) {
-                cardparea.setVisibility(View.VISIBLE);
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                bPay.setEnabled(false);
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                int myNum1 = 0;
+                int tot = 0;
+                try {
+                    myNum1 = Integer.parseInt(etLAmount.getText().toString());
+                    int myNum12 = Integer.parseInt(txt_interest.getText().toString());
+                    int myNum13 = Integer.parseInt(txt_penalty.getText().toString());
+                    tot = myNum12 + myNum13;
+
+                } catch (NumberFormatException nfe) {
+                    System.out.println("Could not parse " + nfe);
+                }
+                if (myNum1 >= tot) {
+                    bPay.setEnabled(true);
+                }
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                int myNum1 = 0;
+                int tot = 0;
+                try {
+                    myNum1 = Integer.parseInt(etLAmount.getText().toString());
+                    int myNum20 = Integer.parseInt(txt_interest.getText().toString());
+                    int myNum30 = Integer.parseInt(txt_penalty.getText().toString());
+                    tot = myNum20 + myNum30;
+
+                } catch (NumberFormatException nfe) {
+                    System.out.println("Could not parse " + nfe);
+                }
+                if (myNum1 >= tot) {
+                    bPay.setEnabled(true);
+                }
+
+
             }
         });
-        pstatus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                cardparea.setVisibility(View.GONE);
-                makeJsonObjectRequest();
-                //Toast.makeText(getApplicationContext(), "Unable to find the database url. Invalid database url", Toast.LENGTH_SHORT).show();
-            }
-        });
+//        String main_data[] = {"data1", "is_primary", "data3", "data2", "data1", "is_primary", "photo_uri", "mimetype"};
+//        Object object = getContentResolver().query(Uri.withAppendedPath(android.provider.ContactsContract.Profile.CONTENT_URI, "data"),
+//                main_data, "mimetype=?",
+//                new String[]{"vnd.android.cursor.item/phone_v2"},
+//                "is_primary DESC");
+//        if (object != null) {
+//            while (((Cursor) (object)).moveToNext()) {
+//                // This is the phoneNumber
+//                String phoneNum = ((Cursor) (object)).getString(4);
+//                etPhoneNumber.setText(phoneNum);
+//            }
+//            ((Cursor) (object)).close();
+//        }
+
+
 
         bPay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
                 if (etPhoneNumber.getText().toString().trim().length() <= 0 || !isNetworkStatusAvialable(getApplicationContext()) ) {
 
                     android.app.AlertDialog.Builder a_builder = new android.app.AlertDialog.Builder(Premium .this);
@@ -223,6 +328,8 @@ public class Premium extends BaseActivity implements PaymentListener, IMainActiv
 
 
                 }else {
+
+
 
 
                     RegSer();
@@ -265,228 +372,6 @@ public class Premium extends BaseActivity implements PaymentListener, IMainActiv
             }
         });
     }
-    private void makeJsonObjectRequest() {
-
-        showpDialog();
-
-        final List<String> productsArrayList = new ArrayList<String>();
-
-
-        JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.GET,
-                urlForJsonObject,
-                null,
-                new Response.Listener<JSONObject>() {
-
-                    @Override
-                    public void onResponse(JSONObject response) {
-                        Log.d(TAG, response.toString()); //for android log cat??
-
-                        try {
-                            // Parsing json object response
-                            // response will be a json object
-                            int success = response.getInt("success");
-                            if (success == 1){
-                                JSONArray products = response.getJSONArray("products");
-
-                                for(int i =0; i<products.length(); i++){
-                                    JSONObject phone = products.getJSONObject(i);
-                                    String name = phone.get("name").toString();
-                                    String price = phone.get("price").toString();
-                                    String description = phone.get("description").toString();
-                                    jsonResponse = "";
-                                    jsonResponse += "Loan ID: " + name + "\n\n";
-                                    jsonResponse += "Principal: " + price + "\n\n";
-                                    jsonResponse += "Interest: " + description + "\n\n";
-                                    productsArrayList.add(jsonResponse);
-
-                                }
-//                                acno.setText("AC: " + price  );
-                                ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(
-                                        Premium.this,
-                                        android.R.layout.simple_list_item_1,
-                                        productsArrayList );
-
-                                productsList.setAdapter(arrayAdapter);
-                            }
-                            else {
-                                Toast.makeText(Premium.this, "No products in the database", Toast.LENGTH_LONG).show();
-                            }
-
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                            Toast.makeText(getApplicationContext(),
-                                    "Error: " + e.getMessage(),
-                                    Toast.LENGTH_LONG).show();
-                        }
-
-                        hidepDialog();
-
-                    }
-
-                }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError volleyError) {
-                VolleyLog.d(TAG,"Error: "+ volleyError.getMessage() );
-                Toast.makeText(getApplicationContext(), volleyError.getMessage(), Toast.LENGTH_SHORT).show();
-                hidepDialog();
-            }
-        });
-        //adding request to request queue
-        AppController.getmInstance().addToRequestQueue(jsonObjReq);
-    }
-
-
-
-    private void showpDialog(){
-        if(!pDialog.isShowing()){
-            pDialog.show();
-        }
-    }
-
-    private void hidepDialog(){
-        if(pDialog.isShowing()){
-            pDialog.dismiss();
-        }
-    }
-
-//    @Override
-//    public void onRefresh() {
-//        if (checkForConnection()){
-//            viewDescription.setVisibility(View.VISIBLE);
-//            noConnection.setVisibility(View.GONE);
-//            makeJsonObjectRequest();
-//            swipeLayout.setRefreshing(false);
-//
-//        }
-//        else{
-//            productsList.setVisibility(View.GONE);
-//            viewDescription.setVisibility(View.GONE);
-//            noConnection.setVisibility(View.VISIBLE);
-//            swipeLayout.setRefreshing(false);
-//
-//        }
-//    }
-
-    @Override
-    public void onDestroy() {
-        // You must call this or the ad adapter may cause a memory leak
-        super.onDestroy();
-    }
-
-    private Boolean checkForConnection() {
-        ConnectivityManager connectivityManager
-                = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
-        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
-    }
-
-
-
-    private void confirmLastPayment() {
-        SharedPreferences sp = getSharedPreferences(getPackageName(), MODE_PRIVATE);
-
-        //We saved the last transaction id to Shared Preferences
-        String transactionId = sp.getString("chowderTransactionId", null);
-
-        //Call chowder.checkTransactionStatus to check a transaction
-        //Check last transaction
-        if (transactionId != null) {
-            chowder.checkTransactionStatus(PAYBILL_NUMBER, transactionId);
-
-
-        } else {
-            Toast.makeText(getApplicationContext(), "No previous transaction available", Toast.LENGTH_SHORT).show();
-        }
-    }
-
-    private void accessApp() {
-        //SharedPreferences sp = getSharedPreferences(getPackageName(), MODE_PRIVATE);
-
-        //We saved the last transaction id to Shared Preferences
-        //String transactionStatus = sp.getString("transactionStatus", null);
-
-        //Call chowder.checkTransactionStatus to check a transaction
-        //Check last transaction
-        sharedPreference = new SharedPreference();
-        String transactionStatus;
-
-
-
-        //Retrieve a value from SharedPreference
-        Activity context = this;
-        transactionStatus = sharedPreference.getValue(context);
-
-
-
-
-        if (transactionStatus !=null) {
-            //chowder.checkTransactionStatus(PAYBILL_NUMBER, transactionStatus);
-            Intent n = new Intent(Premium.this, MainActivity.class);
-            startActivity(n);
-
-        } else {
-            Toast.makeText(getApplicationContext(), "You haven't made payment yet.No transaction data available", Toast.LENGTH_LONG).show();
-            attempt_counter--;
-            attempts.setText(Integer.toString(attempt_counter));
-            if(attempt_counter == 0){
-                bAccess.setEnabled(false);
-                android.app.AlertDialog.Builder a_builder = new android.app.AlertDialog.Builder(Premium.this);
-                a_builder.setMessage("Have you made your payment?").setCancelable(false)
-                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                android.app.AlertDialog.Builder a_builder = new android.app.AlertDialog.Builder(Premium.this);
-                                a_builder.setMessage("Ensure your internet connection is on,then click on the confirm payment button\n" +
-                                        "If your last transaction is shown on the screen ,restart app and login again\n" +
-                                        "if you dont get any message call:0729314341 for further assistance").setCancelable(false)
-
-                                        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
-                                            public void onClick(DialogInterface dialog, int which) {
-                                                dialog.dismiss();
-                                            }
-                                        }).show();
-
-
-
-
-                            }
-                        })
-                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                android.app.AlertDialog.Builder a_builder = new android.app.AlertDialog.Builder(Premium.this);
-                                a_builder.setMessage("Ensure your internet connection is on,then  enter your phone number on the space provided\n" +
-                                        "click on the pay button..it is a mpesa payment method\n" +
-                                        "if your payment is successful ,restart app and press the login button").setCancelable(false)
-
-                                        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
-                                            public void onClick(DialogInterface dialog, int which) {
-                                                dialog.dismiss();
-                                            }
-                                        }).show();
-                            }
-                        });
-
-                android.app.AlertDialog alert = a_builder.create();
-                alert.setTitle("Login Assistant");
-                alert.show();
-            }
-        }
-    }
-
-
-
-public  void RegSer(){
-
-    oid = "12345";
-    rid = PAYBILL_NUMBER;
-    uid = etPhoneNumber.getText().toString();
-    add = "Loan Repayment";
-    od = "9th April 2019";
-    ba = etLAmount.getText().toString();
-
-    new PostDataTOServer().execute();
-}
 
     @Override
     public void setMode(int mode) {
@@ -694,16 +579,27 @@ public  void RegSer(){
         }
     }*/
 
-    public static boolean isNetworkStatusAvialable (Context context) {
-        ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
-        if (connectivityManager != null)
-        {
-            NetworkInfo netInfos = connectivityManager.getActiveNetworkInfo();
-            if(netInfos != null)
-                if(netInfos.isConnected())
-                    return true;
+    public void RegSer() {
+
+        Intent intent = getIntent();
+        Bundle extras = intent.getExtras();
+        if (extras != null) {
+            String loan_bal = extras.getString("loan_bal");
+            String loan_id = extras.getString("loan_id");
+            String penalty = extras.getString("penalty");
+            String interest = extras.getString("interest");
+            String total = extras.getString("total");
+
+
+            oid = " " + loan_id;
+            rid = PAYBILL_NUMBER;
+            uid = etPhoneNumber.getText().toString();
+            add = "Loan Repayment";
+            od = "9th April 2019";
+            ba = etLAmount.getText().toString();
+
+            new PostDataTOServer().execute();
         }
-        return false;
     }
 
 

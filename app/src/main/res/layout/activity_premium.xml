@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView android:id="@+id/scrollView1"
     android:layout_width="match_parent"
+    android:background="#AAA8A8"
     android:layout_height="wrap_content"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -8,542 +9,402 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/activity_premium"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:context="com.bofomet.ising.Activites.Premium"
+        tools:context=".Premium"
         android:weightSum="1">
 
-        <android.support.v7.widget.CardView
+        <android.support.design.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_margin="10dp"
-            app:cardCornerRadius="5dp"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="5sp"
+            app:cardCornerRadius="10sp"
+            app:cardMaxElevation="15sp">
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:layout_height="wrap_content">
-        <LinearLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_weight="0.06">
-
-            <TextView
-                android:text="Loan Status"
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/LStatus"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:textStyle="normal|bold"
-                android:textSize="18sp" />
+                android:layout_marginStart="20sp"
+                android:orientation="vertical">
 
-
-
-        </LinearLayout>
                 <LinearLayout
-                    xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-                    >
-
-                    <LinearLayout
-                        xmlns:android="http://schemas.android.com/apk/res/android"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_width="wrap_content"
-                       >
-                    <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_height="wrap_content">
-                            <TextView
-                                android:text="Account No: "
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/txtacno"
-                                android:layout_alignParentTop="true"
-                                android:layout_alignParentLeft="true"
-                                android:layout_alignParentStart="true"
-                                android:textColor="#0A0000"
-                                android:textStyle="normal|bold"
-                                />
-                            <TextView
-                                android:text="ACZ0001"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textColor="#3F0202"
-                                android:id="@+id/acno"
-                                android:layout_marginLeft="15dp"
-                                android:layout_alignParentTop="true"
-                                android:layout_alignParentLeft="true"
-                                android:layout_alignParentStart="true"
-                                android:textStyle="normal|bold"
-                                android:textSize="12sp" />
-                        </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_height="wrap_content">
                     <TextView
-                        android:text="Phone No: "
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/txtpno"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
-                        android:textColor="#0A0000"
-                        android:textStyle="normal|bold"
-                         />
+                        android:text="Name : " />
+
                     <TextView
-                        android:text="254 729 314 341"
+                        android:id="@+id/txt_Fname"
+            android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="shadrack Ngetick" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="#3F0202"
-                        android:id="@+id/pno"
-                        android:layout_marginLeft="15dp"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
-                        android:textStyle="normal|bold"
-                        android:textSize="12sp" />
-                    </LinearLayout>
-                    <LinearLayout
+                        android:text="AC NO : " />
+
+                    <TextView
+                        android:id="@+id/txt_acno"
                         android:layout_width="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_height="wrap_content">
-                        <TextView
-                            android:text="Full Name: "
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/txtfname"
-                            android:layout_alignParentTop="true"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentStart="true"
-                            android:textColor="#0A0000"
-                            android:textStyle="normal|bold"
-                             />
-                        <TextView
-                            android:text="Shadrack Kipkorir"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="#3F0202"
-                            android:id="@+id/fname"
-                            android:layout_marginLeft="15dp"
-                            android:layout_alignParentTop="true"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentStart="true"
-                            android:textStyle="normal|bold"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:text="ac_no" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:text="Loan Type : " />
+
+                    <TextView
+                        android:id="@+id/txt_Ltype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10000039" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </android.support.design.card.MaterialCardView>
+
+        <android.support.design.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="5sp"
+            app:cardCornerRadius="10sp"
+            app:cardMaxElevation="15sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginTop="10sp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
                         <TextView
-                            android:text="Member Type: "
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/txtmtype"
-                            android:layout_alignParentTop="true"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentStart="true"
-                            android:textColor="#0A0000"
-                            android:textStyle="normal|bold"
-                             />
+                        android:layout_height="wrap_content"
+                            android:text="TOTAL LOAN" />
+
                         <TextView
-                            android:text="Staff"
-                            android:layout_width="wrap_content"
+                        android:layout_width="wrap_content"
+                            android:id="@+id/txt_total"
                             android:layout_height="wrap_content"
-                            android:textColor="#3F0202"
-                            android:id="@+id/mtype"
-                            android:layout_marginLeft="15dp"
-                            android:layout_alignParentTop="true"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentStart="true"
-                            android:textStyle="normal|bold"
-                            android:textSize="12sp" />
-                    </LinearLayout>
+                            android:layout_marginStart="20sp"
+                            android:text="@string/_1000"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BALANCE" />
+
+                        <TextView
+                            android:id="@+id/txt_principal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20sp"
+                            android:text="@string/_1000"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="INTEREST" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_interest"
+                        android:layout_marginStart="20sp"
+                        android:text="@string/_1000"
+                        android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                        android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PENALTY" />
+
+                        <TextView
+                            android:id="@+id/txt_penalty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20sp"
+                            android:text="@string/_100"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/other_charges" />
+
+                        <TextView
+                            android:id="@+id/txt_O_charges"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20sp"
+                            android:text="@string/other_c"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/etLAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="#D5EEE9"
+                            android:ems="10"
+                            android:hint="Enter Amount to Pay"
+                            android:inputType="phone"
+                            android:textColor="@android:color/black"
+                            android:textStyle="normal|bold" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etPhoneNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="#D5EEE9"
+                        android:ems="10"
+                        android:hint="@string/enter_phone_no"
+                        android:inputType="phone"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal|bold" />
+
+
+                    <Button
+                        android:id="@+id/bPay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:background="#cc0505"
+                        android:enabled="false"
+                        android:text="@string/pay"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Attempts:"
+                        android:textSize="24sp"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:id="@+id/textView_attemp_Count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:background="#000"
+                        android:textColor="#fff"
+                        android:textSize="24sp"
+                        android:textStyle="normal|bold" />
+                    <!--android:id="@+id/textView_attemt_Count"-->
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/bConfirm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="#cc0505"
+                        android:text="@string/confirm_last_pay"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold" />
+
+                    <Button
+                        android:id="@+id/bAccess"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#cc0505"
+                        android:text="@string/check_transaction"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.design.card.MaterialCardView>
+
+
+    </LinearLayout>
+</ScrollView><!--<android.support.v7.widget.CardView--><!--android:layout_width="match_parent"--><!--android:layout_margin="10dp"--><!--app:cardCornerRadius="5dp"--><!--android:layout_height="wrap_content">--><!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:orientation="vertical"--><!--android:layout_height="wrap_content">--><!--<LinearLayout--><!--xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_height="wrap_content"--><!--android:orientation="horizontal"--><!--android:layout_width="match_parent"--><!--android:layout_weight="0.06">-->
+
+    <!--<TextView--><!--android:text="Loan Status"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:id="@+id/LStatus"--><!--android:layout_alignParentTop="true"--><!--android:layout_alignParentLeft="true"--><!--android:layout_alignParentStart="true"--><!--android:textStyle="normal|bold"--><!--android:textSize="18sp" />-->
+
+
+    <!--</LinearLayout>--><!--<LinearLayout--><!--xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_height="wrap_content"--><!--android:orientation="vertical"--><!--android:layout_marginTop="10dp"--><!--android:layout_width="match_parent"-->
+
+    <!--&gt;-->
 
                     <!--<LinearLayout-->
                         <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
                         <!--android:layout_height="wrap_content"-->
                         <!--android:orientation="vertical"-->
-                        <!--android:layout_marginTop="10dp"-->
-                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:layout_marginTop="10dp"--><!--android:layout_marginRight="10dp"-->
                         <!--android:layout_width="wrap_content"-->
-                       <!--&gt;-->
-                        <!--<LinearLayout-->
+                       <!--&gt;--><!--<LinearLayout-->
                             <!--android:layout_width="wrap_content"-->
                             <!--android:orientation="horizontal"-->
                             <!--android:layout_height="wrap_content">-->
-                            <!--<TextView-->
-                                <!--android:text="Principal: "-->
+                            <!--<TextView--><!--android:text="Account No: "-->
                                 <!--android:layout_width="wrap_content"-->
-                                <!--android:layout_height="wrap_content"-->
-                                <!--android:id="@+id/txtlbal"-->
+                                <!--android:layout_height="wrap_content"--><!--android:id="@+id/txtacno"-->
                                 <!--android:layout_alignParentTop="true"-->
                                 <!--android:layout_alignParentLeft="true"-->
                                 <!--android:layout_alignParentStart="true"-->
                                 <!--android:textColor="#0A0000"-->
                                 <!--android:textStyle="normal|bold"-->
                                 <!--/>-->
-                            <!--<TextView-->
-                                <!--android:text="ksh 2045"-->
+                            <!--<TextView--><!--android:text="ACZ0001"-->
                                 <!--android:layout_width="wrap_content"-->
                                 <!--android:layout_height="wrap_content"-->
-                                <!--android:textColor="#3F0202"-->
-                                <!--android:id="@+id/lbal"-->
+                                <!--android:textColor="#3F0202"--><!--android:id="@+id/acno"-->
                                 <!--android:layout_marginLeft="15dp"-->
                                 <!--android:layout_alignParentTop="true"-->
                                 <!--android:layout_alignParentLeft="true"-->
                                 <!--android:layout_alignParentStart="true"-->
                                 <!--android:textStyle="normal|bold"-->
                                 <!--android:textSize="12sp" />-->
-                        <!--</LinearLayout>-->
-                        <!--<LinearLayout-->
-                            <!--android:layout_width="wrap_content"-->
-                            <!--android:orientation="horizontal"-->
-                            <!--android:layout_height="wrap_content">-->
-                            <!--<TextView-->
-                                <!--android:text="Interest: "-->
-                                <!--android:layout_width="wrap_content"-->
-                                <!--android:layout_height="wrap_content"-->
-                                <!--android:id="@+id/txtinter"-->
-                                <!--android:layout_alignParentTop="true"-->
-                                <!--android:layout_alignParentLeft="true"-->
-                                <!--android:layout_alignParentStart="true"-->
-                                <!--android:textColor="#0A0000"-->
-                                <!--android:textStyle="normal|bold"-->
-                                 <!--/>-->
-                            <!--<TextView-->
-                                <!--android:text="ksh 300"-->
-                                <!--android:layout_width="wrap_content"-->
-                                <!--android:layout_height="wrap_content"-->
-                                <!--android:textColor="#3F0202"-->
-                                <!--android:id="@+id/inter"-->
-                                <!--android:layout_marginLeft="15dp"-->
-                                <!--android:layout_alignParentTop="true"-->
-                                <!--android:layout_alignParentLeft="true"-->
-                                <!--android:layout_alignParentStart="true"-->
-                                <!--android:textStyle="normal|bold"-->
-                                <!--android:textSize="12sp" />-->
-                        <!--</LinearLayout>-->
-                        <!--<LinearLayout-->
-                            <!--android:layout_width="wrap_content"-->
-                            <!--android:orientation="horizontal"-->
-                            <!--android:layout_height="wrap_content">-->
-                            <!--<TextView-->
-                                <!--android:text="Loan Penalty: "-->
-                                <!--android:layout_width="wrap_content"-->
-                                <!--android:layout_height="wrap_content"-->
-                                <!--android:id="@+id/txtpenal"-->
-                                <!--android:layout_alignParentTop="true"-->
-                                <!--android:layout_alignParentLeft="true"-->
-                                <!--android:layout_alignParentStart="true"-->
-                                <!--android:textColor="#0A0000"-->
-                                <!--android:textStyle="normal|bold"-->
-                                 <!--/>-->
-                            <!--<TextView-->
-                                <!--android:text="ksh 0"-->
-                                <!--android:layout_width="wrap_content"-->
-                                <!--android:layout_height="wrap_content"-->
-                                <!--android:textColor="#3F0202"-->
-                                <!--android:id="@+id/penal"-->
-                                <!--android:layout_marginLeft="15dp"-->
-                                <!--android:layout_alignParentTop="true"-->
-                                <!--android:layout_alignParentLeft="true"-->
-                                <!--android:layout_alignParentStart="true"-->
-                                <!--android:textStyle="normal|bold"-->
-                                <!--android:textSize="12sp" />-->
-                        <!--</LinearLayout>-->
-                        <!--<LinearLayout-->
-                            <!--android:layout_width="wrap_content"-->
-                            <!--android:orientation="horizontal"-->
-                            <!--android:layout_height="wrap_content">-->
-                            <!--<TextView-->
-                                <!--android:text="Sub Total: "-->
-                                <!--android:layout_width="wrap_content"-->
-                                <!--android:layout_height="wrap_content"-->
-                                <!--android:id="@+id/txtstotal"-->
-                                <!--android:layout_alignParentTop="true"-->
-                                <!--android:layout_alignParentLeft="true"-->
-                                <!--android:layout_alignParentStart="true"-->
-                                <!--android:textColor="#0A0000"-->
-                                <!--android:textStyle="normal|bold"-->
-                                 <!--/>-->
-                            <!--<TextView-->
-                                <!--android:text="ksh 300"-->
-                                <!--android:layout_width="wrap_content"-->
-                                <!--android:layout_height="wrap_content"-->
-                                <!--android:textColor="#3F0202"-->
-                                <!--android:id="@+id/stotal"-->
-                                <!--android:layout_marginLeft="15dp"-->
-                                <!--android:layout_alignParentTop="true"-->
-                                <!--android:layout_alignParentLeft="true"-->
-                                <!--android:layout_alignParentStart="true"-->
-                                <!--android:textStyle="normal|bold"-->
-                                <!--android:textSize="12sp" />-->
-                        <!--</LinearLayout>-->
+                        <!--</LinearLayout>--><!--<LinearLayout--><!--android:layout_width="wrap_content"--><!--android:orientation="horizontal"--><!--android:layout_height="wrap_content">--><!--<TextView--><!--android:text="Phone No: "--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:id="@+id/txtpno"--><!--android:layout_alignParentTop="true"--><!--android:layout_alignParentLeft="true"--><!--android:layout_alignParentStart="true"--><!--android:textColor="#0A0000"--><!--android:textStyle="normal|bold"--><!--/>--><!--<TextView--><!--android:text="254 729 314 341"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:textColor="#3F0202"--><!--android:id="@+id/pno"--><!--android:layout_marginLeft="15dp"--><!--android:layout_alignParentTop="true"--><!--android:layout_alignParentLeft="true"--><!--android:layout_alignParentStart="true"--><!--android:textStyle="normal|bold"--><!--android:textSize="12sp" />--><!--</LinearLayout>--><!--<LinearLayout--><!--android:layout_width="wrap_content"--><!--android:orientation="horizontal"--><!--android:layout_height="wrap_content">--><!--<TextView--><!--android:text="Full Name: "--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:id="@+id/txtfname"--><!--android:layout_alignParentTop="true"--><!--android:layout_alignParentLeft="true"--><!--android:layout_alignParentStart="true"--><!--android:textColor="#0A0000"--><!--android:textStyle="normal|bold"--><!--/>--><!--<TextView--><!--android:text="Shadrack Kipkorir"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:textColor="#3F0202"--><!--android:id="@+id/fname"--><!--android:layout_marginLeft="15dp"--><!--android:layout_alignParentTop="true"--><!--android:layout_alignParentLeft="true"--><!--android:layout_alignParentStart="true"--><!--android:textStyle="normal|bold"--><!--android:textSize="12sp" />--><!--</LinearLayout>--><!--<LinearLayout--><!--android:layout_width="wrap_content"--><!--android:orientation="horizontal"--><!--android:layout_height="wrap_content">--><!--<TextView--><!--android:text="Member Type: "--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:id="@+id/txtmtype"--><!--android:layout_alignParentTop="true"--><!--android:layout_alignParentLeft="true"--><!--android:layout_alignParentStart="true"--><!--android:textColor="#0A0000"--><!--android:textStyle="normal|bold"--><!--/>--><!--<TextView--><!--android:text="Staff"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:textColor="#3F0202"--><!--android:id="@+id/mtype"--><!--android:layout_marginLeft="15dp"--><!--android:layout_alignParentTop="true"--><!--android:layout_alignParentLeft="true"--><!--android:layout_alignParentStart="true"--><!--android:textStyle="normal|bold"--><!--android:textSize="12sp" />--><!--</LinearLayout>-->
 
                     <!--</LinearLayout>-->
 
-                </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:orientation="horizontal"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/view_description"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="20dp"
-                    android:padding="4dp"
-                    android:text="@string/view_products_info"
-                    android:textColor="@color/colorPrimary"
-                    android:visibility="gone"/>
+    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;--><!--&lt;!&ndash;xmlns:android="http://schemas.android.com/apk/res/android"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:orientation="vertical"&ndash;&gt;--><!--&lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;--><!--&lt;!&ndash;android:layout_marginLeft="10dp"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;&gt;&ndash;&gt;--><!--&lt;!&ndash;<LinearLayout&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;--><!--&lt;!&ndash;<TextView&ndash;&gt;--><!--&lt;!&ndash;android:text="Principal: "&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/txtlbal"&ndash;&gt;--><!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;--><!--&lt;!&ndash;android:layout_alignParentLeft="true"&ndash;&gt;--><!--&lt;!&ndash;android:layout_alignParentStart="true"&ndash;&gt;--><!--&lt;!&ndash;android:textColor="#0A0000"&ndash;&gt;--><!--&lt;!&ndash;android:textStyle="normal|bold"&ndash;&gt;--><!--&lt;!&ndash;/>&ndash;&gt;--><!--&lt;!&ndash;<TextView&ndash;&gt;--><!--&lt;!&ndash;android:text="ksh 2045"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:textColor="#3F0202"&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/lbal"&ndash;&gt;--><!--&lt;!&ndash;android:layout_marginLeft="15dp"&ndash;&gt;--><!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;--><!--&lt;!&ndash;android:layout_alignParentLeft="true"&ndash;&gt;--><!--&lt;!&ndash;android:layout_alignParentStart="true"&ndash;&gt;--><!--&lt;!&ndash;android:textStyle="normal|bold"&ndash;&gt;--><!--&lt;!&ndash;android:textSize="12sp" />&ndash;&gt;--><!--&lt;!&ndash;</LinearLayout>&ndash;&gt;--><!--&lt;!&ndash;<LinearLayout&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;--><!--&lt;!&ndash;<TextView&ndash;&gt;--><!--&lt;!&ndash;android:text="Interest: "&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/txtinter"&ndash;&gt;--><!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;--><!--&lt;!&ndash;android:layout_alignParentLeft="true"&ndash;&gt;--><!--&lt;!&ndash;android:layout_alignParentStart="true"&ndash;&gt;--><!--&lt;!&ndash;android:textColor="#0A0000"&ndash;&gt;--><!--&lt;!&ndash;android:textStyle="normal|bold"&ndash;&gt;--><!--&lt;!&ndash;/>&ndash;&gt;--><!--&lt;!&ndash;<TextView&ndash;&gt;--><!--&lt;!&ndash;android:text="ksh 300"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:textColor="#3F0202"&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/inter"&ndash;&gt;--><!--&lt;!&ndash;android:layout_marginLeft="15dp"&ndash;&gt;--><!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;--><!--&lt;!&ndash;android:layout_alignParentLeft="true"&ndash;&gt;--><!--&lt;!&ndash;android:layout_alignParentStart="true"&ndash;&gt;--><!--&lt;!&ndash;android:textStyle="normal|bold"&ndash;&gt;--><!--&lt;!&ndash;android:textSize="12sp" />&ndash;&gt;--><!--&lt;!&ndash;</LinearLayout>&ndash;&gt;--><!--&lt;!&ndash;<LinearLayout&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;--><!--&lt;!&ndash;<TextView&ndash;&gt;--><!--&lt;!&ndash;android:text="Loan Penalty: "&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/txtpenal"&ndash;&gt;--><!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;--><!--&lt;!&ndash;android:layout_alignParentLeft="true"&ndash;&gt;--><!--&lt;!&ndash;android:layout_alignParentStart="true"&ndash;&gt;--><!--&lt;!&ndash;android:textColor="#0A0000"&ndash;&gt;--><!--&lt;!&ndash;android:textStyle="normal|bold"&ndash;&gt;--><!--&lt;!&ndash;/>&ndash;&gt;--><!--&lt;!&ndash;<TextView&ndash;&gt;--><!--&lt;!&ndash;android:text="ksh 0"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:textColor="#3F0202"&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/penal"&ndash;&gt;--><!--&lt;!&ndash;android:layout_marginLeft="15dp"&ndash;&gt;--><!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;--><!--&lt;!&ndash;android:layout_alignParentLeft="true"&ndash;&gt;--><!--&lt;!&ndash;android:layout_alignParentStart="true"&ndash;&gt;--><!--&lt;!&ndash;android:textStyle="normal|bold"&ndash;&gt;--><!--&lt;!&ndash;android:textSize="12sp" />&ndash;&gt;--><!--&lt;!&ndash;</LinearLayout>&ndash;&gt;--><!--&lt;!&ndash;<LinearLayout&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;--><!--&lt;!&ndash;<TextView&ndash;&gt;--><!--&lt;!&ndash;android:text="Sub Total: "&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/txtstotal"&ndash;&gt;--><!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;--><!--&lt;!&ndash;android:layout_alignParentLeft="true"&ndash;&gt;--><!--&lt;!&ndash;android:layout_alignParentStart="true"&ndash;&gt;--><!--&lt;!&ndash;android:textColor="#0A0000"&ndash;&gt;--><!--&lt;!&ndash;android:textStyle="normal|bold"&ndash;&gt;--><!--&lt;!&ndash;/>&ndash;&gt;--><!--&lt;!&ndash;<TextView&ndash;&gt;--><!--&lt;!&ndash;android:text="ksh 300"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:textColor="#3F0202"&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/stotal"&ndash;&gt;--><!--&lt;!&ndash;android:layout_marginLeft="15dp"&ndash;&gt;--><!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;--><!--&lt;!&ndash;android:layout_alignParentLeft="true"&ndash;&gt;--><!--&lt;!&ndash;android:layout_alignParentStart="true"&ndash;&gt;--><!--&lt;!&ndash;android:textStyle="normal|bold"&ndash;&gt;--><!--&lt;!&ndash;android:textSize="12sp" />&ndash;&gt;--><!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
 
-                <TextView
-                    android:id="@+id/no_connection"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="@string/no_connection"
-                    android:visibility="gone"/>
+    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
 
-                <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/swipe_layout"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+    <!--</LinearLayout>--><!--<LinearLayout--><!--android:layout_width="wrap_content"--><!--android:orientation="horizontal"--><!--android:layout_gravity="center_horizontal"--><!--android:gravity="center"--><!--android:visibility="gone"--><!--android:layout_marginTop="20dp"--><!--android:layout_marginBottom="20dp"--><!--android:layout_height="wrap_content">-->
 
-                    <ListView
-                        android:id="@+id/listloan"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                    </ListView>
+    <!--&lt;!&ndash;<TextView&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/view_description"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:textSize="20dp"&ndash;&gt;--><!--&lt;!&ndash;android:padding="4dp"&ndash;&gt;--><!--&lt;!&ndash;android:text="@string/view_products_info"&ndash;&gt;--><!--&lt;!&ndash;android:textColor="@color/colorPrimary"&ndash;&gt;--><!--&lt;!&ndash;android:visibility="gone"/>&ndash;&gt;-->
 
-                </android.support.v4.widget.SwipeRefreshLayout>
+    <!--&lt;!&ndash;<TextView&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/no_connection"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:gravity="center"&ndash;&gt;--><!--&lt;!&ndash;android:text="@string/no_connection"&ndash;&gt;--><!--&lt;!&ndash;android:visibility="gone"/>&ndash;&gt;-->
 
-            </LinearLayout>
+    <!--&lt;!&ndash;<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/swipe_layout"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;-->
+
+    <!--<ListView--><!--android:id="@+id/listview_all_products"--><!--android:layout_width="match_parent"--><!--android:visibility="gone"--><!--android:layout_height="wrap_content">--><!--</ListView>-->
+
+    <!--&lt;!&ndash;</android.support.v4.widget.SwipeRefreshLayout>&ndash;&gt;-->
+
+    <!--</LinearLayout>-->
 
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_gravity="center_horizontal"
-                        android:gravity="center"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginBottom="20dp"
-                        android:layout_height="wrap_content">
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:orientation="horizontal"--><!--android:layout_gravity="center_horizontal"--><!--android:gravity="center"--><!--android:layout_marginTop="20dp"--><!--android:layout_marginBottom="20dp"--><!--android:layout_height="wrap_content">-->
 
-                        <Button
-                            android:background="#cc0505"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/mpay"
-                            android:text="Make Payment"
-                            android:textSize="18sp"
-                            android:textStyle="normal|bold"/>
+    <!--<Button--><!--android:background="#cc0505"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:id="@+id/mpay"--><!--android:text="Make Payment"--><!--android:textSize="18sp"--><!--android:textStyle="normal|bold"/>-->
 
-                        <Button
-                            android:background="#cc0505"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:id="@+id/pstatus"
-                            android:text="Check Payment Details"
-                            android:textSize="14sp"
-                            android:textStyle="normal|bold"/>
-                    </LinearLayout>
+    <!--<Button--><!--android:background="#cc0505"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="20dp"--><!--android:id="@+id/pstatus"--><!--android:text="Check Payment Details"--><!--android:textSize="14sp"--><!--android:textStyle="normal|bold"/>--><!--</LinearLayout>-->
 
 
+    <!--</LinearLayout>--><!--</android.support.v7.widget.CardView>-->
 
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:elevation="10dp"
-            app:cardElevation="15dp"
-            android:visibility="gone"
-            android:id="@+id/cardparea"
-            app:cardMaxElevation="10dp"
-            app:cardCornerRadius="5dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <EditText
-                        android:id="@+id/etLAmount"
-                        android:layout_width="wrap_content"
-                        android:layout_height="35dp"
-                        android:layout_marginLeft="16dp"
-                        android:layout_marginBottom="16dp"
-                        android:hint="Enter Amount to Pay"
-                        android:background="#D5EEE9"
-                        android:textStyle="normal|bold"
-                        android:inputType="phone"
-                        android:ems="10"
-                        android:textColor="@android:color/black" />
-
-                </android.support.design.widget.TextInputLayout>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Loan Due: "
-                    android:textSize="14sp"
-                    android:layout_marginLeft="5dp"
-                    android:textStyle="normal|bold"
-                    android:layout_gravity="center_vertical"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" Ksh 2,045 "
-                    android:textSize="14sp"
-                    android:textStyle="normal|bold"
-                    android:layout_gravity="center_vertical"/>
-
-            </LinearLayout>
-        <LinearLayout
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp">
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <EditText
-                    android:id="@+id/etPhoneNumber"
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:hint="Enter Phone no"
-                    android:background="#D5EEE9"
-                    android:textStyle="normal|bold"
-                    android:inputType="phone"
-                    android:ems="10"
-                    android:textColor="@android:color/black" />
-
-            </android.support.design.widget.TextInputLayout>
-
-            <Button
-                android:id="@+id/bPay"
-                android:layout_width="wrap_content"
-                android:background="#cc0505"
-                android:layout_height="wrap_content"
-                android:text="Pay"
-                android:layout_marginLeft="30dp"
-                android:textStyle="normal|bold"
-                android:textSize="18sp" />
-        </LinearLayout>
-
-                <LinearLayout
-                    xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:gravity="center_horizontal"
-                    android:layout_gravity="center_horizontal">
-                    <Button
-                        android:id="@+id/bConfirm"
-                        android:background="#cc0505"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Confirm Pay"
-                        android:textSize="18sp"
-                        android:layout_marginBottom="10dp"
-                        android:textStyle="normal|bold" />
-                    <Button
-                        android:id="@+id/bAccess"
-                        android:layout_width="wrap_content"
-                        android:background="#cc0505"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:layout_height="wrap_content"
-                        android:text="Premium contents"
-                        android:textSize="18sp"
-                        android:textStyle="normal|bold" />
+    <!--<android.support.v7.widget.CardView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_margin="10dp"--><!--android:elevation="10dp"--><!--app:cardElevation="15dp"--><!--android:visibility="gone"--><!--android:id="@+id/cardparea"--><!--app:cardMaxElevation="10dp"--><!--app:cardCornerRadius="5dp">-->
 
 
-                </LinearLayout>
-
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
+    <!--</LinearLayout>--><!--</android.support.v7.widget.CardView>-->
 
 
+    <!--<LinearLayout--><!--xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_height="wrap_content"--><!--android:orientation="horizontal"--><!--android:visibility="gone"--><!--android:layout_width="match_parent">-->
+
+    <!--<TextView--><!--android:text="Attempts:"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:id="@+id/textView3"--><!--android:textSize="24sp"--><!--android:textStyle="normal|bold" />-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:textSize="24sp"--><!--android:layout_marginLeft="30dp"--><!--android:id="@+id/textView_attemt_Count"--><!--android:textStyle="normal|bold"--><!--android:background="#000"--><!--android:textColor="#fff" />--><!--</LinearLayout>-->
 
 
-        <LinearLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:visibility="gone"
-            android:layout_width="match_parent">
+    <!--<WebView--><!--android:id="@+id/webViewMusic"--><!--android:background="#c4b8b8"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginBottom="50dp"--><!--android:layout_marginTop="50dp" />--><!--&lt;!&ndash;<ImageView&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="@dimen/width_height"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="@dimen/width_height"&ndash;&gt;--><!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;--><!--&lt;!&ndash;android:src="@drawable/lipampesa"&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/imageView" />&ndash;&gt;-->
 
-            <TextView
-                android:text="Attempts:"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView3"
-                android:textSize="24sp"
-                android:textStyle="normal|bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="24sp"
-                android:layout_marginLeft="30dp"
-                android:id="@+id/textView_attemt_Count"
-                android:textStyle="normal|bold"
-                android:background="#000"
-                android:textColor="#fff" />
-        </LinearLayout>
-
-
-        <WebView
-            android:id="@+id/webViewMusic"
-            android:background="#c4b8b8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="50dp"
-            android:layout_marginTop="50dp" />
-        <!--<ImageView-->
-            <!--android:layout_width="@dimen/width_height"-->
-            <!--android:layout_height="@dimen/width_height"-->
-            <!--android:layout_gravity="center"-->
-            <!--android:src="@drawable/lipampesa"-->
-            <!--android:id="@+id/imageView" />-->
-
-    </LinearLayout>
-</ScrollView>
