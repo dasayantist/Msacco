@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+
+    <Button android:id="@+id/btnViewProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Products"
+        android:layout_marginTop="25dip"/>
+
+
+    <Button android:id="@+id/btnCreateProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Products"
+        android:layout_marginTop="25dip"/>
+
+    <Button android:id="@+id/btnUpdateProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update a product"
+        android:layout_marginTop="25dip"/>
+
+    <Button android:id="@+id/btnDeleteProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete a product"
+        android:layout_marginTop="25dip"/>
+
+</LinearLayout>

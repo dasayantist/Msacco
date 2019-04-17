@@ -1,0 +1,4 @@
+#Wed Apr 17 14:30:11 EAT 2019
+base.0=P\:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\8
+path.0=classes.dex
+renamed.0=classes.dex
