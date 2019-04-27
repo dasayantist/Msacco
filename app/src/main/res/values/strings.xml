@@ -7,7 +7,6 @@
     <string name="nav_header_desc">Navigation header</string>
 
 
-
     <string name="no_connection">No internet connection.</string>
     <string name="action_settings">Setting</string>
     <string name="view_products_info">These are all the products that are currently in our database: </string>
@@ -16,7 +15,6 @@
 
 
     <string name="txt_status">loan status</string>
-
 
 
     <string name="title_activity_login">LoginActivity</string>
@@ -202,8 +200,6 @@
     <string name="pref_ringtone_silent">Silent</string>
 
     <string name="pref_title_vibrate">Vibrate</string>
-
-
 
 
     <!--General-->

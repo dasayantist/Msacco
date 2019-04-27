@@ -36,6 +36,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 
@@ -56,6 +57,8 @@ public class Premium extends BaseActivity implements PaymentListener, IMainActiv
     TextView txt_total, txt_principal, txt_interest, txt_penalty, txt_o_charges;
     Button bPay, bConfirm, bAccess;
 
+    String loan_id = "";
+
     int attempt_counter = 3;
     private static TextView attempts;
    // private PrefManager prefManager;
@@ -65,7 +68,7 @@ public class Premium extends BaseActivity implements PaymentListener, IMainActiv
     Chowder chowder;
     String oid, rid, uid, add, od, ba;
     private int success = 0;
-    private String path = "http://192.168.0.109/zsacco/order.php";
+    private String path = "http://192.168.0.101/zsacco/order.php";
 
     public static boolean isNetworkStatusAvialable(Context context) {
         ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -102,7 +105,7 @@ public class Premium extends BaseActivity implements PaymentListener, IMainActiv
         Bundle extras = intent.getExtras();
         if(extras != null) {
             String loan_bal = extras.getString("loan_bal");
-            String loan_id = extras.getString("loan_id");
+            loan_id = extras.getString("loan_id");
             String penalty = extras.getString("penalty");
             String interest = extras.getString("interest");
             String total = extras.getString("total");
@@ -257,6 +260,8 @@ public class Premium extends BaseActivity implements PaymentListener, IMainActiv
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 int myNum1 = 0;
                 int tot = 0;
+
+
                 try {
                     myNum1 = Integer.parseInt(etLAmount.getText().toString());
                     int myNum12 = Integer.parseInt(txt_interest.getText().toString());
@@ -291,8 +296,7 @@ public class Premium extends BaseActivity implements PaymentListener, IMainActiv
 
 
             }
-        });
-//        String main_data[] = {"data1", "is_primary", "data3", "data2", "data1", "is_primary", "photo_uri", "mimetype"};
+            //String main_data[] = {"data1", "is_primary", "data3", "data2", "data1", "is_primary", "photo_uri", "mimetype"};
 //        Object object = getContentResolver().query(Uri.withAppendedPath(android.provider.ContactsContract.Profile.CONTENT_URI, "data"),
 //                main_data, "mimetype=?",
 //                new String[]{"vnd.android.cursor.item/phone_v2"},
@@ -305,12 +309,16 @@ public class Premium extends BaseActivity implements PaymentListener, IMainActiv
 //            }
 //            ((Cursor) (object)).close();
 //        }
+        });
+//
 
 
 
         bPay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                RegSer();
                 if (etPhoneNumber.getText().toString().trim().length() <= 0 || !isNetworkStatusAvialable(getApplicationContext()) ) {
 
                     android.app.AlertDialog.Builder a_builder = new android.app.AlertDialog.Builder(Premium .this);
@@ -332,7 +340,7 @@ public class Premium extends BaseActivity implements PaymentListener, IMainActiv
 
 
 
-                    RegSer();
+
                     String amount = etLAmount.getText().toString().trim();
                     String phoneNumber = etPhoneNumber.getText().toString().trim();
                     //Your product's ID must have 13 digits
@@ -408,80 +416,16 @@ public class Premium extends BaseActivity implements PaymentListener, IMainActiv
         return null;
     }
 
-    private class PostDataTOServer extends AsyncTask<Void, Void, Void> {
+    public void RegSer() {
 
-        String response = "";
-        //Create hashmap Object to send parameters to web service
-        HashMap<String, String> postDataParams;
+        oid = loan_id;
+        rid = PAYBILL_NUMBER;
+        uid = etPhoneNumber.getText().toString();
+        add = "Loan Repayment";
+        od = java.text.DateFormat.getDateTimeInstance().format(Calendar.getInstance().getTime());
+        ba = etLAmount.getText().toString();
 
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-        }
-
-        @Override
-        protected Void doInBackground(Void... voids) {
-
-
-
-            try {
-
-                String link = path;
-                String data = URLEncoder.encode("orderid", "UTF-8") + "=" +
-                        URLEncoder.encode(oid, "UTF-8");
-                data += "&" + URLEncoder.encode("restid", "UTF-8") + "=" +
-                        URLEncoder.encode(rid, "UTF-8");
-                data += "&" + URLEncoder.encode("uid", "UTF-8") + "=" +
-                        URLEncoder.encode(uid, "UTF-8");
-                data += "&" + URLEncoder.encode("add", "UTF-8") + "=" +
-                        URLEncoder.encode(add, "UTF-8");
-                data += "&" + URLEncoder.encode("orderdetail", "UTF-8") + "=" +
-                        URLEncoder.encode(od, "UTF-8");
-                data += "&" + URLEncoder.encode("amount", "UTF-8") + "=" +
-                        URLEncoder.encode(ba, "UTF-8");
-
-                URL url = new URL(link);
-                URLConnection conn = url.openConnection();
-
-                conn.setDoOutput(true);
-                OutputStreamWriter wr = new OutputStreamWriter(conn.getOutputStream());
-
-                wr.write(data);
-                wr.flush();
-
-                BufferedReader reader = new BufferedReader(new
-                        InputStreamReader(conn.getInputStream()));
-
-                StringBuilder sb = new StringBuilder();
-                String line = null;
-
-                // Read Server Response
-                while ((line = reader.readLine()) != null) {
-                    sb.append(line);
-                    break;
-                }
-
-                return null;
-            } catch (Exception e) {
-                String s = new String("Exception: " + e.getMessage());
-                System.out.print(s);
-                return null;
-
-            }
-        }
-
-
-
-
-
-        protected void onPostExecute(Void result) {
-            super.onPostExecute(result);
-
-            if (success == 1) {
-                Toast.makeText(getApplicationContext(), "Payment  successfully..!", Toast.LENGTH_LONG).show();
-            }
-        }
-
+        new PostDataTOServer().execute();
     }
 
 
@@ -579,27 +523,76 @@ public class Premium extends BaseActivity implements PaymentListener, IMainActiv
         }
     }*/
 
-    public void RegSer() {
+    private class PostDataTOServer extends AsyncTask<Void, Void, Void> {
 
-        Intent intent = getIntent();
-        Bundle extras = intent.getExtras();
-        if (extras != null) {
-            String loan_bal = extras.getString("loan_bal");
-            String loan_id = extras.getString("loan_id");
-            String penalty = extras.getString("penalty");
-            String interest = extras.getString("interest");
-            String total = extras.getString("total");
+        String response = "";
+        //Create hashmap Object to send parameters to web service
+        HashMap<String, String> postDataParams;
 
-
-            oid = " " + loan_id;
-            rid = PAYBILL_NUMBER;
-            uid = etPhoneNumber.getText().toString();
-            add = "Loan Repayment";
-            od = "9th April 2019";
-            ba = etLAmount.getText().toString();
-
-            new PostDataTOServer().execute();
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
         }
+
+        @Override
+        protected Void doInBackground(Void... voids) {
+
+
+            try {
+                //uid,dateid,pbill,mtel,acdetail,amount
+                String link = path;
+                String data = URLEncoder.encode("acdetail", "UTF-8") + "=" +
+                        URLEncoder.encode(oid, "UTF-8");
+                data += "&" + URLEncoder.encode("pbill", "UTF-8") + "=" +
+                        URLEncoder.encode(rid, "UTF-8");
+                data += "&" + URLEncoder.encode("mtel", "UTF-8") + "=" +
+                        URLEncoder.encode(uid, "UTF-8");
+                data += "&" + URLEncoder.encode("uid", "UTF-8") + "=" +
+                        URLEncoder.encode(add, "UTF-8");
+                data += "&" + URLEncoder.encode("dateid", "UTF-8") + "=" +
+                        URLEncoder.encode(od, "UTF-8");
+                data += "&" + URLEncoder.encode("amount", "UTF-8") + "=" +
+                        URLEncoder.encode(ba, "UTF-8");
+
+                URL url = new URL(link);
+                URLConnection conn = url.openConnection();
+
+                conn.setDoOutput(true);
+                OutputStreamWriter wr = new OutputStreamWriter(conn.getOutputStream());
+
+                wr.write(data);
+                wr.flush();
+
+                BufferedReader reader = new BufferedReader(new
+                        InputStreamReader(conn.getInputStream()));
+
+                StringBuilder sb = new StringBuilder();
+                String line = null;
+
+                // Read Server Response
+                while ((line = reader.readLine()) != null) {
+                    sb.append(line);
+                    break;
+                }
+
+                return null;
+            } catch (Exception e) {
+                String s = new String("Exception: " + e.getMessage());
+                System.out.print(s);
+                return null;
+
+            }
+        }
+
+
+        protected void onPostExecute(Void result) {
+            super.onPostExecute(result);
+
+            if (success == 1) {
+                Toast.makeText(getApplicationContext(), "Payment  successfully..!", Toast.LENGTH_LONG).show();
+            }
+        }
+
     }
 
 

@@ -1174,6 +1174,9 @@ id FUNCTION
 id META
 id SHIFT
 id SYM
+id TextView1
+id TextView2
+id View1
 id action0
 id action_bar
 id action_bar_activity_content
@@ -1221,6 +1224,8 @@ id btnViewProducts
 id btn_add_product
 id btn_back
 id btn_login
+id btn_logout
+id btn_register
 id btn_reset_password
 id btn_show_at_id
 id btn_signup
@@ -1329,6 +1334,7 @@ id loan_principal
 id loan_time
 id loan_total
 id loan_type
+id logo
 id main_content
 id masked
 id media_actions
@@ -1460,12 +1466,16 @@ id txt_Fname
 id txt_Ltype
 id txt_O_charges
 id txt_acno
+id txt_confirm_password
+id txt_id
 id txt_interest
 id txt_otherc
+id txt_password
 id txt_penalty
 id txt_principal
 id txt_status
 id txt_total
+id txt_username
 id uniform
 id unlabeled
 id up
@@ -1529,6 +1539,7 @@ layout abc_tooltip
 layout activity_base
 layout activity_db
 layout activity_delete_product
+layout activity_home
 layout activity_login
 layout activity_main
 layout activity_main_new
@@ -1560,6 +1571,7 @@ layout layout_welcome_first
 layout layout_welcome_second
 layout layout_welcome_third
 layout loanlist
+layout login
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout nav_header_main
@@ -1578,10 +1590,12 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout password_reset
 layout php_login
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout signin
 layout support_simple_spinner_dropdown_item
 menu activity_main_drawer
 menu main

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-51:12
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-46:12
 MERGED from [:chowder] P:\AndroidProjects\Msacco\chowder\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-20:12
 MERGED from [com.android.support:design:28.0.0-rc02] C:\Users\Ngetich\.gradle\caches\transforms-1\files-1.1\design-28.0.0-rc02.aar\a46565005afd3aa6e6e64c2908a36750\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0-rc02] C:\Users\Ngetich\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0-rc02.aar\3ea9d9d16f11e03744da46f92475986e\AndroidManifest.xml:17:1-22:12
@@ -59,25 +59,25 @@ MERGED from [com.android.support:interpolator:28.0.0-rc02] C:\Users\Ngetich\.gra
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Ngetich\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\b1ec6cf518f3ca275b5d5769883bbe1d\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Ngetich\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\3f628e5f651bb9c0d5c8cadc5fe220f1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] C:\Users\Ngetich\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-16.0.0.aar\57988816a86ce3f9bbe9e35f1bf556ef\AndroidManifest.xml:17:1-24:12
-INJECTED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-46:12
 	package
 		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:3:5-37
 		INJECTED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml
 		INJECTED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml
-		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-51:12
+		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-46:12
 		INJECTED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml
-		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-51:12
+		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-46:12
 		INJECTED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:6:5-67
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:5:5-67
 MERGED from [:chowder] P:\AndroidProjects\Msacco\chowder\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-67
 MERGED from [:chowder] P:\AndroidProjects\Msacco\chowder\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-67
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\Ngetich\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-16.0.1.aar\e169f7a2dc6f203a3478576dd837cd39\AndroidManifest.xml:22:5-67
@@ -93,9 +93,9 @@ MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Ngetich\.gradle\c
 MERGED from [com.google.firebase:firebase-storage-common:16.0.1] C:\Users\Ngetich\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-16.0.1.aar\7331a919f313103082485f283a3db82b\AndroidManifest.xml:8:5-67
 MERGED from [com.google.firebase:firebase-storage-common:16.0.1] C:\Users\Ngetich\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-16.0.1.aar\7331a919f313103082485f283a3db82b\AndroidManifest.xml:8:5-67
 	android:name
-		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:6:22-64
+		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:7:5-79
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:6:5-79
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\Ngetich\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-16.0.1.aar\e169f7a2dc6f203a3478576dd837cd39\AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\Ngetich\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-16.0.1.aar\e169f7a2dc6f203a3478576dd837cd39\AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Ngetich\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\4c6e059d181b0e8f97828f2fe6ee60f0\AndroidManifest.xml:24:5-79
@@ -107,31 +107,31 @@ MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Ngetich\.gradle\c
 MERGED from [com.google.firebase:firebase-storage-common:16.0.1] C:\Users\Ngetich\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-16.0.1.aar\7331a919f313103082485f283a3db82b\AndroidManifest.xml:7:5-79
 MERGED from [com.google.firebase:firebase-storage-common:16.0.1] C:\Users\Ngetich\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-16.0.1.aar\7331a919f313103082485f283a3db82b\AndroidManifest.xml:7:5-79
 	android:name
-		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:7:22-76
+		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:6:22-76
 uses-permission#android.permission.READ_SMS
-ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:8:5-67
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:7:5-67
 MERGED from [:chowder] P:\AndroidProjects\Msacco\chowder\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-67
 MERGED from [:chowder] P:\AndroidProjects\Msacco\chowder\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-67
 	android:name
-		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:8:22-64
+		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:7:22-64
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:9:5-75
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:8:5-75
 	android:name
-		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:9:22-72
+		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:8:22-72
 uses-permission#android.permission.READ_CONTACTS
-ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:10:5-72
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:9:5-72
 	android:name
-		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:10:22-69
+		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:9:22-69
 uses-permission#android.permission.WRITE_CONTACTS
-ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:11:5-73
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:10:5-73
 	android:name
-		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:11:22-70
+		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:10:22-70
 uses-permission#android.permission.READ_PROFILE
-ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:12:5-71
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:11:5-71
 	android:name
-		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:12:22-68
+		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:11:22-68
 application
-ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:13:5-49:19
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:13:5-44:19
 MERGED from [:chowder] P:\AndroidProjects\Msacco\chowder\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-18:19
 MERGED from [:chowder] P:\AndroidProjects\Msacco\chowder\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-18:19
 MERGED from [com.android.support:design:28.0.0-rc02] C:\Users\Ngetich\.gradle\caches\transforms-1\files-1.1\design-28.0.0-rc02.aar\a46565005afd3aa6e6e64c2908a36750\AndroidManifest.xml:22:5-20
@@ -194,68 +194,84 @@ MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] C:\Us
 		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:20:9-40
 	android:name
 		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:14:9-42
+activity#com.dasayantist.msacco.login.Home
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:21:9-57
+	android:name
+		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:21:19-45
+activity#com.dasayantist.msacco.login.ResetPassword
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:22:9-57
+	android:name
+		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:22:19-54
+activity#com.dasayantist.msacco.login.Signin
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:23:9-50
+	android:name
+		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:23:19-47
+activity#com.dasayantist.msacco.login.Login
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:24:9-49
+	android:name
+		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:24:19-46
 activity#com.dasayantist.msacco.MainActivity
-ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:21:9-23:20
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:25:9-50
 	android:name
-		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:21:19-47
+		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:25:19-47
 activity#com.dasayantist.msacco.Premium
-ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:24:9-26:20
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:26:9-45
 	android:name
-		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:24:19-42
+		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:26:19-42
 activity#com.dasayantist.msacco.DBActivity
-ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:27:9-29:20
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:27:9-48
 	android:name
 		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:27:19-45
 activity#com.dasayantist.msacco.MySQLActivity
-ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:30:9-32:20
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:28:9-51
 	android:name
-		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:30:19-48
+		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:28:19-48
 activity#com.dasayantist.msacco.NewProductActivity
-ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:33:9-56
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:29:9-56
 	android:name
-		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:33:19-53
+		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:29:19-53
 activity#com.dasayantist.msacco.PrincipalActivity
-ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:34:9-40:20
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:30:9-37:20
 	android:name
-		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:34:19-52
+		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:30:19-52
 intent-filter#action:name:android.intent.action.MAIN+action:name:android.intent.action.VIEW+category:name:android.intent.category.LAUNCHER
-ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:35:13-39:29
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:31:13-36:29
 action#android.intent.action.MAIN
-ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:36:17-69
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:32:17-69
 	android:name
-		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:36:25-66
+		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:32:25-66
 action#android.intent.action.VIEW
-ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:37:17-69
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:33:17-69
 	android:name
-		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:37:25-66
+		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:33:25-66
 category#android.intent.category.LAUNCHER
-ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:38:17-77
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:35:17-77
 	android:name
-		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:38:27-74
+		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:35:27-74
 activity#com.dasayantist.msacco.ViewProductsActivity
-ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:41:9-43:20
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:38:9-58
 	android:name
-		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:41:19-55
+		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:38:19-55
 activity#com.dasayantist.msacco.UpdateProductActivity
-ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:44:9-59
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:39:9-59
 	android:name
-		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:44:19-56
+		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:39:19-56
 activity#com.dasayantist.msacco.DeleteProductActivity
-ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:45:9-59
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:40:9-59
 	android:name
-		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:45:19-56
+		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:40:19-56
 activity#com.dasayantist.msacco.LoginActivity
-ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:46:9-51
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:41:9-51
 	android:name
-		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:46:19-48
+		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:41:19-48
 activity#com.dasayantist.msacco.SignUpActivity
-ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:47:9-52
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:42:9-52
 	android:name
-		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:47:19-49
+		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:42:19-49
 activity#com.dasayantist.msacco.ResetPasswordActivity
-ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:48:9-59
+ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:43:9-59
 	android:name
-		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:48:19-56
+		ADDED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml:43:19-56
 uses-sdk
 INJECTED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from P:\AndroidProjects\Msacco\app\src\main\AndroidManifest.xml
