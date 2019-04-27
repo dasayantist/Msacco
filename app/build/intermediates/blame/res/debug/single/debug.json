@@ -24,12 +24,12 @@
         "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc02.aar\\3ea9d9d16f11e03744da46f92475986e\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc02.aar\\3ea9d9d16f11e03744da46f92475986e\\res\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
-    },
-    {
         "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_media_custom.xml.flat",
         "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\87caeebd6793eb6f13384d5c339ceda5\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
+        "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc02.aar\\3ea9d9d16f11e03744da46f92475986e\\res\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
         "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
@@ -56,6 +56,10 @@
         "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc02.aar\\3ea9d9d16f11e03744da46f92475986e\\res\\drawable-mdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
+        "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\layout_password_reset.xml.flat",
+        "source": "P:\\AndroidProjects\\Msacco\\app\\src\\main\\res\\layout\\password_reset.xml"
+    },
+    {
         "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_button_bar_material.xml.flat",
         "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc02.aar\\3ea9d9d16f11e03744da46f92475986e\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
@@ -64,12 +68,12 @@
         "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc02.aar\\3ea9d9d16f11e03744da46f92475986e\\res\\color-v21\\abc_btn_colored_borderless_text_material.xml"
     },
     {
-        "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d1fa033ee4376a6e8efc5a09354dc82c\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
-    },
-    {
         "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\interpolator-v21_mtrl_fast_out_slow_in.xml.flat",
         "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0-rc02.aar\\a46565005afd3aa6e6e64c2908a36750\\res\\interpolator-v21\\mtrl_fast_out_slow_in.xml"
+    },
+    {
+        "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
+        "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d1fa033ee4376a6e8efc5a09354dc82c\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -156,12 +160,12 @@
         "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d1fa033ee4376a6e8efc5a09354dc82c\\res\\color\\common_google_signin_btn_text_light.xml"
     },
     {
-        "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_enter.xml.flat",
-        "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc02.aar\\3ea9d9d16f11e03744da46f92475986e\\res\\anim\\abc_popup_enter.xml"
-    },
-    {
         "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc02.aar\\3ea9d9d16f11e03744da46f92475986e\\res\\drawable-mdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_enter.xml.flat",
+        "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc02.aar\\3ea9d9d16f11e03744da46f92475986e\\res\\anim\\abc_popup_enter.xml"
     },
     {
         "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_media_cancel_action.xml.flat",
@@ -184,12 +188,12 @@
         "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc02.aar\\3ea9d9d16f11e03744da46f92475986e\\res\\color\\switch_thumb_material_light.xml"
     },
     {
-        "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc02.aar\\3ea9d9d16f11e03744da46f92475986e\\res\\drawable-xxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
-    },
-    {
         "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "P:\\AndroidProjects\\Msacco\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc02.aar\\3ea9d9d16f11e03744da46f92475986e\\res\\drawable-xxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
         "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -244,12 +248,12 @@
         "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\87caeebd6793eb6f13384d5c339ceda5\\res\\layout\\notification_media_action.xml"
     },
     {
-        "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
-        "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc02.aar\\3ea9d9d16f11e03744da46f92475986e\\res\\drawable-mdpi-v4\\abc_popup_background_mtrl_mult.9.png"
-    },
-    {
         "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
         "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d1fa033ee4376a6e8efc5a09354dc82c\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
+        "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc02.aar\\3ea9d9d16f11e03744da46f92475986e\\res\\drawable-mdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
     {
         "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
@@ -276,12 +280,12 @@
         "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0-rc02.aar\\9a84e7434aa2a1fcd4ab77acda9357a6\\res\\drawable\\notification_tile_bg.xml"
     },
     {
-        "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_thumb_material.xml.flat",
-        "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc02.aar\\3ea9d9d16f11e03744da46f92475986e\\res\\drawable\\abc_seekbar_thumb_material.xml"
-    },
-    {
         "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc02.aar\\3ea9d9d16f11e03744da46f92475986e\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_thumb_material.xml.flat",
+        "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc02.aar\\3ea9d9d16f11e03744da46f92475986e\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
         "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
@@ -408,12 +412,12 @@
         "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d1fa033ee4376a6e8efc5a09354dc82c\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
-        "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_time.xml.flat",
-        "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0-rc02.aar\\9a84e7434aa2a1fcd4ab77acda9357a6\\res\\layout\\notification_template_part_time.xml"
-    },
-    {
         "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_manage.xml.flat",
         "source": "P:\\AndroidProjects\\Msacco\\app\\src\\main\\res\\drawable\\ic_menu_manage.xml"
+    },
+    {
+        "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_time.xml.flat",
+        "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0-rc02.aar\\9a84e7434aa2a1fcd4ab77acda9357a6\\res\\layout\\notification_template_part_time.xml"
     },
     {
         "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -432,12 +436,12 @@
         "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc02.aar\\3ea9d9d16f11e03744da46f92475986e\\res\\drawable-xxhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_item_layout.xml.flat",
-        "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc02.aar\\3ea9d9d16f11e03744da46f92475986e\\res\\layout\\abc_action_menu_item_layout.xml"
-    },
-    {
         "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc02.aar\\3ea9d9d16f11e03744da46f92475986e\\res\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_item_layout.xml.flat",
+        "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc02.aar\\3ea9d9d16f11e03744da46f92475986e\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
         "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -904,6 +908,10 @@
         "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d1fa033ee4376a6e8efc5a09354dc82c\\res\\drawable-mdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
+        "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\layout_login.xml.flat",
+        "source": "P:\\AndroidProjects\\Msacco\\app\\src\\main\\res\\layout\\login.xml"
+    },
+    {
         "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc02.aar\\3ea9d9d16f11e03744da46f92475986e\\res\\drawable-hdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
@@ -1084,6 +1092,10 @@
         "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0-rc02.aar\\a46565005afd3aa6e6e64c2908a36750\\res\\layout\\design_layout_tab_text.xml"
     },
     {
+        "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\layout_signin.xml.flat",
+        "source": "P:\\AndroidProjects\\Msacco\\app\\src\\main\\res\\layout\\signin.xml"
+    },
+    {
         "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_color_highlight_material.xml.flat",
         "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc02.aar\\3ea9d9d16f11e03744da46f92475986e\\res\\color-v23\\abc_color_highlight_material.xml"
     },
@@ -1222,6 +1234,10 @@
     {
         "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_snackbar_include.xml.flat",
         "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0-rc02.aar\\a46565005afd3aa6e6e64c2908a36750\\res\\layout\\design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_home.xml.flat",
+        "source": "P:\\AndroidProjects\\Msacco\\app\\src\\main\\res\\layout\\activity_home.xml"
     },
     {
         "merged": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_base.xml.flat",

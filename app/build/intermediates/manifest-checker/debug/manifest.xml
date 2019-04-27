@@ -36,14 +36,14 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.dasayantist.msacco.MainActivity" >
-        </activity>
-        <activity android:name="com.dasayantist.msacco.Premium" >
-        </activity>
-        <activity android:name="com.dasayantist.msacco.DBActivity" >
-        </activity>
-        <activity android:name="com.dasayantist.msacco.MySQLActivity" >
-        </activity>
+        <activity android:name="com.dasayantist.msacco.login.Home" />
+        <activity android:name="com.dasayantist.msacco.login.ResetPassword" />
+        <activity android:name="com.dasayantist.msacco.login.Signin" />
+        <activity android:name="com.dasayantist.msacco.login.Login" />
+        <activity android:name="com.dasayantist.msacco.MainActivity" />
+        <activity android:name="com.dasayantist.msacco.Premium" />
+        <activity android:name="com.dasayantist.msacco.DBActivity" />
+        <activity android:name="com.dasayantist.msacco.MySQLActivity" />
         <activity android:name="com.dasayantist.msacco.NewProductActivity" />
         <activity android:name="com.dasayantist.msacco.PrincipalActivity" >
             <intent-filter>
@@ -53,8 +53,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.dasayantist.msacco.ViewProductsActivity" >
-        </activity>
+        <activity android:name="com.dasayantist.msacco.ViewProductsActivity" />
         <activity android:name="com.dasayantist.msacco.UpdateProductActivity" />
         <activity android:name="com.dasayantist.msacco.DeleteProductActivity" />
         <activity android:name="com.dasayantist.msacco.LoginActivity" />
