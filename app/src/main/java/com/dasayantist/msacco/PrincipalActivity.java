@@ -24,6 +24,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.dasayantist.msacco.adapters.LoanListAdapter;
 import com.dasayantist.msacco.app.AppController;
 import com.dasayantist.msacco.model.Loan;
+import com.dasayantist.msacco.onboard.OnBoardingActivity;
 import com.google.firebase.auth.FirebaseAuth;
 
 import org.json.JSONArray;
@@ -54,11 +55,29 @@ public class PrincipalActivity extends AppCompatActivity implements SwipeRefresh
     //temporary string to show the parsed response
     private String jsonResponse;
     // public String urlForInterestJsonObject = AppController.baseUrl + "get_interest.php?loantypeid=";
+    private     SharedPref               sharedPreferenceObj; // Declare Global
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
+
+
+        sharedPreferenceObj=new SharedPref(PrincipalActivity.this);
+        if(sharedPreferenceObj.getApp_runFirst().equals("FIRST"))
+        {
+            // That's mean First Time Launch
+            // After your Work , SET Status NO
+            sharedPreferenceObj.setApp_runFirst("NO");
+
+            Intent n = new Intent(PrincipalActivity.this, OnBoardingActivity.class);
+            startActivity(n);
+        }
+//        else
+//        {
+//            // App is not First Time Launch
+//        }
+
 
         productsList = findViewById(R.id.listviewallproducts);
         noConnection = findViewById(R.id.no_connection);
