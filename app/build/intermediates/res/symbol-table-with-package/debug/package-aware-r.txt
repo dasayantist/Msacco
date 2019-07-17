@@ -1576,6 +1576,7 @@ layout activity_on_boarding
 layout activity_premium
 layout activity_principal
 layout activity_reset_password
+layout activity_set_up
 layout activity_sign_up
 layout activity_update_product
 layout activity_view_products

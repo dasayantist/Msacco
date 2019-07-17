@@ -36,6 +36,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.dasayantist.msacco.SetUpActivity" />
         <activity android:name="com.dasayantist.msacco.login.Home" />
         <activity android:name="com.dasayantist.msacco.login.ResetPassword" />
         <activity android:name="com.dasayantist.msacco.login.Signin" />
@@ -59,8 +60,7 @@
         <activity android:name="com.dasayantist.msacco.LoginActivity" />
         <activity android:name="com.dasayantist.msacco.SignUpActivity" />
         <activity android:name="com.dasayantist.msacco.ResetPasswordActivity" />
-        <activity android:name="com.dasayantist.msacco.onboard.OnBoardingActivity" >
-        </activity>
+        <activity android:name="com.dasayantist.msacco.onboard.OnBoardingActivity" />
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
             android:excludeFromRecents="true"

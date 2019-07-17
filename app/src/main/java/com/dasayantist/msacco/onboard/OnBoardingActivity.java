@@ -11,10 +11,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.Toast;
-
-import com.dasayantist.msacco.PrincipalActivity;
 import com.dasayantist.msacco.R;
+import com.dasayantist.msacco.SetUpActivity;
 
 import java.util.ArrayList;
 
@@ -45,9 +43,9 @@ public class OnBoardingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_on_boarding);
 
-        btn_get_started = (Button) findViewById(R.id.btn_get_started);
-        onboard_pager = (ViewPager) findViewById(R.id.pager_introduction);
-        pager_indicator = (LinearLayout) findViewById(R.id.viewPagerCountDots);
+        btn_get_started =  findViewById(R.id.btn_get_started);
+        onboard_pager =  findViewById(R.id.pager_introduction);
+        pager_indicator =  findViewById(R.id.viewPagerCountDots);
 
         loadData();
 
@@ -91,7 +89,7 @@ public class OnBoardingActivity extends AppCompatActivity {
         btn_get_started.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent n = new Intent(OnBoardingActivity.this, PrincipalActivity.class);
+                Intent n = new Intent(OnBoardingActivity.this, SetUpActivity.class);
                 startActivity(n);
 
                 //Toast.makeText(OnBoardingActivity.this,"Redirect to wherever you want",Toast.LENGTH_LONG).show();

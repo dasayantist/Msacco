@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-50:12
+ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-48:12
 MERGED from [:chowder] C:\Users\sngetich\StudioProjects\Msacco\chowder\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-20:12
 MERGED from [com.android.support:design:28.0.0-rc02] C:\Users\sngetich\.gradle\caches\transforms-1\files-1.1\design-28.0.0-rc02.aar\3132c84dbf23932f49f97b11578d89b7\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0-rc02] C:\Users\sngetich\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0-rc02.aar\24a4cf4ea34b712026fc650193a2a421\AndroidManifest.xml:17:1-22:12
@@ -59,20 +59,20 @@ MERGED from [com.android.support:interpolator:28.0.0-rc02] C:\Users\sngetich\.gr
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\sngetich\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\9728dc0c7be7a6c5379ddf424c8acd17\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\sngetich\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\b33361dc9f3dbde04da1d77817b753c5\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] C:\Users\sngetich\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-16.0.0.aar\0988405207528fe2b5a2d06f3118f6d6\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-48:12
 	package
 		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:3:5-37
 		INJECTED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-50:12
+		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-48:12
 		INJECTED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-50:12
+		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:2:1-48:12
 		INJECTED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:2:11-69
@@ -131,7 +131,7 @@ ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.
 	android:name
 		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:11:22-68
 application
-ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:13:5-48:19
+ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:13:5-46:19
 MERGED from [:chowder] C:\Users\sngetich\StudioProjects\Msacco\chowder\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-18:19
 MERGED from [:chowder] C:\Users\sngetich\StudioProjects\Msacco\chowder\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-18:19
 MERGED from [com.android.support:design:28.0.0-rc02] C:\Users\sngetich\.gradle\caches\transforms-1\files-1.1\design-28.0.0-rc02.aar\3132c84dbf23932f49f97b11578d89b7\AndroidManifest.xml:22:5-20
@@ -194,88 +194,92 @@ MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] C:\Us
 		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:20:9-40
 	android:name
 		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:14:9-42
+activity#com.dasayantist.msacco.SetUpActivity
+ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:21:9-60
+	android:name
+		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:21:19-48
 activity#com.dasayantist.msacco.login.Home
-ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:21:9-57
+ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:22:9-48
 	android:name
-		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:21:19-45
+		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:22:19-45
 activity#com.dasayantist.msacco.login.ResetPassword
-ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:22:9-57
+ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:23:9-57
 	android:name
-		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:22:19-54
+		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:23:19-54
 activity#com.dasayantist.msacco.login.Signin
-ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:23:9-50
+ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:24:9-50
 	android:name
-		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:23:19-47
+		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:24:19-47
 activity#com.dasayantist.msacco.login.Login
-ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:24:9-49
+ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:25:9-49
 	android:name
-		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:24:19-46
+		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:25:19-46
 activity#com.dasayantist.msacco.MainActivity
-ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:25:9-50
+ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:26:9-50
 	android:name
-		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:25:19-47
+		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:26:19-47
 activity#com.dasayantist.msacco.Premium
-ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:26:9-45
+ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:27:9-45
 	android:name
-		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:26:19-42
+		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:27:19-42
 activity#com.dasayantist.msacco.DBActivity
-ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:27:9-48
+ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:28:9-48
 	android:name
-		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:27:19-45
+		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:28:19-45
 activity#com.dasayantist.msacco.MySQLActivity
-ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:28:9-51
+ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:29:9-51
 	android:name
-		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:28:19-48
+		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:29:19-48
 activity#com.dasayantist.msacco.NewProductActivity
-ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:29:9-56
+ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:30:9-56
 	android:name
-		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:29:19-53
+		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:30:19-53
 activity#com.dasayantist.msacco.PrincipalActivity
-ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:30:9-37:20
+ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:31:9-38:20
 	android:name
-		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:30:19-52
+		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:31:19-52
 intent-filter#action:name:android.intent.action.MAIN+action:name:android.intent.action.VIEW+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:31:13-36:29
+ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:32:13-37:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:32:17-69
-	android:name
-		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:32:25-66
-action#android.intent.action.VIEW
 ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:33:17-69
 	android:name
 		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:33:25-66
+action#android.intent.action.VIEW
+ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:34:17-69
+	android:name
+		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:34:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:35:17-77
+ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:36:17-77
 	android:name
-		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:35:27-74
+		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:36:27-74
 activity#com.dasayantist.msacco.ViewProductsActivity
-ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:38:9-58
+ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:39:9-58
 	android:name
-		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:38:19-55
+		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:39:19-55
 activity#com.dasayantist.msacco.UpdateProductActivity
-ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:39:9-59
-	android:name
-		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:39:19-56
-activity#com.dasayantist.msacco.DeleteProductActivity
 ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:40:9-59
 	android:name
 		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:40:19-56
+activity#com.dasayantist.msacco.DeleteProductActivity
+ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:41:9-59
+	android:name
+		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:41:19-56
 activity#com.dasayantist.msacco.LoginActivity
-ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:41:9-51
+ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:42:9-51
 	android:name
-		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:41:19-48
+		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:42:19-48
 activity#com.dasayantist.msacco.SignUpActivity
-ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:42:9-52
+ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:43:9-52
 	android:name
-		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:42:19-49
+		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:43:19-49
 activity#com.dasayantist.msacco.ResetPasswordActivity
-ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:43:9-59
+ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:44:9-59
 	android:name
-		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:43:19-56
+		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:44:19-56
 activity#com.dasayantist.msacco.onboard.OnBoardingActivity
-ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:44:9-46:20
+ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:45:9-73
 	android:name
-		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:44:19-61
+		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:45:19-61
 uses-sdk
 INJECTED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml
