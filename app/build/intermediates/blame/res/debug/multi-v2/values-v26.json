@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v26\\values-v26.xml",
+            "outputFile": "C:\\Users\\sngetich\\StudioProjects\\Msacco\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v26\\values-v26.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc02.aar\\3ea9d9d16f11e03744da46f92475986e\\res\\values-v26\\values-v26.xml",
+                    "source": "C:\\Users\\sngetich\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc02.aar\\24a4cf4ea34b712026fc650193a2a421\\res\\values-v26\\values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",

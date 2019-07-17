@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "P:\\AndroidProjects\\Msacco\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+            "outputFile": "C:\\Users\\sngetich\\StudioProjects\\Msacco\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc02.aar\\3ea9d9d16f11e03744da46f92475986e\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\sngetich\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc02.aar\\24a4cf4ea34b712026fc650193a2a421\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,19,20,21,22,24,26,27,28,29,30,32,34,36,38,40,42,43,48,50,52,53,54,56,58,59,60,61,62,63,107,110,154,157,160,162,164,166,169,171,174,175,176,179,180,181,182,183,184,187,188,190,192,194,196,200,202,203,204,205,207,211,213,215,216,217,218,219,221,222,223,233,234,235,247",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,26 +23,7 @@
                     }
                 },
                 {
-                    "source": "P:\\AndroidProjects\\Msacco\\app\\src\\main\\res\\values-v21\\styles.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "19",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "246"
-                    },
-                    "to": {
-                        "startLines": "6",
-                        "startColumns": "4",
-                        "startOffsets": "354",
-                        "endLines": "10",
-                        "endColumns": "12",
-                        "endOffsets": "577"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\87caeebd6793eb6f13384d5c339ceda5\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\sngetich\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\bf29365ca078244250e07ead5434674a\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,5,8,11",
                         "startColumns": "4,4,4,4",
@@ -61,7 +42,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0-rc02.aar\\9a84e7434aa2a1fcd4ab77acda9357a6\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\sngetich\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0-rc02.aar\\3d59c60b476da05a84635f944bac9895\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -80,7 +61,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Ngetich\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0-rc02.aar\\a46565005afd3aa6e6e64c2908a36750\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\sngetich\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0-rc02.aar\\3132c84dbf23932f49f97b11578d89b7\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,10,18,26",
                         "startColumns": "4,4,4,4",
@@ -96,6 +77,25 @@
                         "endLines": "291,299,307,315",
                         "endColumns": "10,10,10,10",
                         "endOffsets": "21076,21502,21925,22360"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\sngetich\\StudioProjects\\Msacco\\app\\src\\main\\res\\values-v21\\styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "19",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "246"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "354",
+                        "endLines": "10",
+                        "endColumns": "12",
+                        "endOffsets": "577"
                     }
                 }
             ]

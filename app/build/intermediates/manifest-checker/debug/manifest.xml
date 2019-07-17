@@ -46,12 +46,6 @@
         <activity android:name="com.dasayantist.msacco.MySQLActivity" />
         <activity android:name="com.dasayantist.msacco.NewProductActivity" />
         <activity android:name="com.dasayantist.msacco.PrincipalActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name="com.dasayantist.msacco.ViewProductsActivity" />
         <activity android:name="com.dasayantist.msacco.UpdateProductActivity" />
@@ -59,6 +53,14 @@
         <activity android:name="com.dasayantist.msacco.LoginActivity" />
         <activity android:name="com.dasayantist.msacco.SignUpActivity" />
         <activity android:name="com.dasayantist.msacco.ResetPasswordActivity" />
+        <activity android:name="com.dasayantist.msacco.onboard.OnBoardingActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
             android:excludeFromRecents="true"

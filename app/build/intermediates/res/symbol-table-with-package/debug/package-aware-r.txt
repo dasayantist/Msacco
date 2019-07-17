@@ -15,6 +15,8 @@ anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
+anim slide_down_anim
+anim slide_up_anim
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -688,6 +690,7 @@ color grey_transparent
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color icons
+color idle_dot
 color indigo
 color light_blue
 color light_green
@@ -734,6 +737,8 @@ color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
 color notification_material_background_media_default_color
+color ob_desc
+color ob_header
 color orange
 color pink
 color primary
@@ -758,6 +763,7 @@ color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
+color selected_dot
 color stay_color
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
@@ -850,6 +856,7 @@ dimen abc_text_size_title_material_toolbar
 dimen activity_horizontal_margin
 dimen activity_vertical_margin
 dimen app_bar_height
+dimen button_text
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
@@ -939,6 +946,7 @@ dimen hint_pressed_alpha_material_light
 dimen item_touch_helper_max_drag_scroll_per_frame
 dimen item_touch_helper_swipe_escape_max_velocity
 dimen item_touch_helper_swipe_escape_velocity
+dimen items_inbetween
 dimen mtrl_bottomappbar_fabOffsetEndMode
 dimen mtrl_bottomappbar_fab_cradle_margin
 dimen mtrl_bottomappbar_fab_cradle_rounded_corner_radius
@@ -1004,6 +1012,13 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen ob_banner_height
+dimen ob_desc_padding
+dimen ob_desc_text_size
+dimen ob_header_text_size
+dimen ob_header_top_margin
+dimen pager_dot_size
+dimen pager_height
 dimen text_final_width
 dimen text_size_14
 dimen text_size_18
@@ -1153,6 +1168,7 @@ drawable ic_save_money_white
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable non_selected_item_dot
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -1165,6 +1181,10 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable onboard_page1
+drawable onboard_page2
+drawable onboard_page3
+drawable selected_item_dot
 drawable side_nav_bar
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1223,6 +1243,7 @@ id btnUpdateProduct
 id btnViewProducts
 id btn_add_product
 id btn_back
+id btn_get_started
 id btn_login
 id btn_logout
 id btn_register
@@ -1315,6 +1336,7 @@ id item_touch_helper_previous_elevation
 id iv_credit_card
 id iv_money
 id iv_money_pig
+id iv_onboard
 id labeled
 id largeLabel
 id left
@@ -1326,6 +1348,7 @@ id listMode
 id list_item
 id listview_all_products
 id listviewallproducts
+id ll_footer
 id loan_id
 id loan_interest
 id loan_list
@@ -1365,6 +1388,7 @@ id notification_main_column
 id notification_main_column_container
 id outline
 id packed
+id pager_introduction
 id parallax
 id parent
 id parentPanel
@@ -1458,7 +1482,9 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id tv_desc
 id tv_first_desc
+id tv_header
 id tv_second_desc
 id tv_third_desc
 id tv_welcome
@@ -1480,6 +1506,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id viewPagerCountDots
 id view_description
 id view_offset_helper
 id view_product_at_id
@@ -1545,6 +1572,7 @@ layout activity_main
 layout activity_main_new
 layout activity_mysql
 layout activity_new_product
+layout activity_on_boarding
 layout activity_premium
 layout activity_principal
 layout activity_reset_password
@@ -1590,6 +1618,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout onboard_item
 layout password_reset
 layout php_login
 layout select_dialog_item_material
@@ -1783,6 +1812,13 @@ string no_chart_data
 string no_connection
 string no_expenses_today
 string no_text
+string ob_desc1
+string ob_desc2
+string ob_desc3
+string ob_get_started
+string ob_header1
+string ob_header2
+string ob_header3
 string ok
 string option_get_place
 string optional_description

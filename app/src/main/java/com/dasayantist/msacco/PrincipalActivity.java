@@ -44,7 +44,7 @@ public class PrincipalActivity extends AppCompatActivity implements SwipeRefresh
     ArrayList<Loan> data;
     FirebaseAuth auth;
     String queryP = " ";
-    String queryPhone = "0729314341";
+    String queryPhone = "0710947709";
     public String urlForJsonObject = AppController.baseUrl + "get_all_products.php?username=" + queryPhone;
     private ProgressDialog pDialog;
     private ListView productsList;
