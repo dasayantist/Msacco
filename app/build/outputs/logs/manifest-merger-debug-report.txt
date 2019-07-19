@@ -195,7 +195,7 @@ MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] C:\Us
 	android:name
 		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:14:9-42
 activity#com.dasayantist.msacco.SetUpActivity
-ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:21:9-60
+ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:21:9-50
 	android:name
 		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:21:19-48
 activity#com.dasayantist.msacco.login.Home
@@ -277,7 +277,7 @@ ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.
 	android:name
 		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:44:19-56
 activity#com.dasayantist.msacco.onboard.OnBoardingActivity
-ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:45:9-73
+ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:45:9-63
 	android:name
 		ADDED from C:\Users\sngetich\StudioProjects\Msacco\app\src\main\AndroidManifest.xml:45:19-61
 uses-sdk
