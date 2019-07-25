@@ -17,7 +17,8 @@ public class AppController extends Application{
     private RequestQueue mRequestQueue;
 
     private static AppController mInstance;
-    public static String baseUrl = "http://10.0.1.210/sacco/";
+    //public static String baseUrl = "http://10.0.1.210/sacco/";
+    public static String baseUrl = "http://192.168.43.248/zsacco/";
 
     @Override
     public void onCreate() {

@@ -17,6 +17,7 @@ anim design_snackbar_in
 anim design_snackbar_out
 anim slide_down_anim
 anim slide_up_anim
+anim together
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -1226,6 +1227,7 @@ id adjust_width
 id alertTitle
 id all
 id always
+id appname
 id async
 id auto
 id bAccess
@@ -1315,6 +1317,7 @@ id ghost_view
 id gone
 id group_divider
 id groups
+id head
 id home
 id homeAsUp
 id icon
@@ -1328,6 +1331,7 @@ id image
 id imageView
 id imgCall
 id imgSMS
+id imgStart
 id img_status
 id info
 id invisible
@@ -1502,6 +1506,7 @@ id txt_principal
 id txt_status
 id txt_total
 id txt_username
+id txtinfo
 id uniform
 id unlabeled
 id up
@@ -1578,6 +1583,7 @@ layout activity_principal
 layout activity_reset_password
 layout activity_set_up
 layout activity_sign_up
+layout activity_splashscreen
 layout activity_update_product
 layout activity_view_products
 layout app_bar_main

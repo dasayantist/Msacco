@@ -55,7 +55,7 @@ public class PrincipalActivity extends AppCompatActivity implements SwipeRefresh
     //temporary string to show the parsed response
     private String jsonResponse;
     // public String urlForInterestJsonObject = AppController.baseUrl + "get_interest.php?loantypeid=";
-    private     SharedPref               sharedPreferenceObj; // Declare Global
+    private     SharedPref  sharedPreferenceObj; // Declare Global
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -9,10 +9,6 @@ import android.view.View;
 
 import com.dasayantist.msacco.interfaces.IFragmentListener;
 
-
-/**
- * Created by Pedro on 15/9/2015.
- */
 public class BaseActivity extends AppCompatActivity implements IFragmentListener {
 
     @Override

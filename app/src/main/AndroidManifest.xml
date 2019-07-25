@@ -17,24 +17,30 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:fullBackupContent="true">
         <activity android:name=".SetUpActivity"/>
         <activity android:name=".login.Home" />
         <activity android:name=".login.ResetPassword" />
         <activity android:name=".login.Signin" />
         <activity android:name=".login.Login" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".Premium" />
-        <activity android:name=".DBActivity" />
-        <activity android:name=".MySQLActivity" />
-        <activity android:name=".NewProductActivity" />
-        <activity android:name=".PrincipalActivity">
+        <activity android:name=".MainActivity">
+
+        </activity>
+        <activity android:name=".Splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".Premium" />
+        <activity android:name=".DBActivity" />
+        <activity android:name=".MySQLActivity" />
+        <activity android:name=".NewProductActivity" />
+        <activity android:name=".PrincipalActivity">
+
         </activity>
         <activity android:name=".ViewProductsActivity" />
         <activity android:name=".UpdateProductActivity" />

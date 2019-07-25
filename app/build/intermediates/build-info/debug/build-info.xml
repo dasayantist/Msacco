@@ -2,104 +2,79 @@
 <instant-run
     abi="armeabi-v7a,armeabi"
     api-level="21"
-    build-mode="FULL"
+    build-mode="COLD"
     density="xxhdpi"
     format="10"
     plugin-version="3.3.2"
-    timestamp="1563537315243"
-    token="6211991244879172701"
-    verifier="FULL_BUILD_REQUESTED" >
+    timestamp="1563692850244"
+    token="8579081239425122628"
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="3587" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="277" />
+        duration="0" />
     <task
         name="verifier"
-        duration="74" />
+        duration="0" />
 
     <artifact
-        location="C:\Users\sngetich\StudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\sngetich\StudioProjects\Msacco\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+        location="C:\Users\Ngetich\AndroidStudioProjects\Msacco\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
         type="SPLIT_MAIN" />
-    <artifact
-        location="C:\Users\sngetich\StudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\sngetich\StudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\sngetich\StudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\sngetich\StudioProjects\Msacco\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\sngetich\StudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\sngetich\StudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\sngetich\StudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\sngetich\StudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\sngetich\StudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\sngetich\StudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-        type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1563537315243"
+        timestamp="1563692356586"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\sngetich\StudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            location="C:\Users\Ngetich\AndroidStudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\sngetich\StudioProjects\Msacco\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            location="C:\Users\Ngetich\AndroidStudioProjects\Msacco\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
         <artifact
-            location="C:\Users\sngetich\StudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="C:\Users\Ngetich\AndroidStudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\sngetich\StudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            location="C:\Users\Ngetich\AndroidStudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\sngetich\StudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            location="C:\Users\Ngetich\AndroidStudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\sngetich\StudioProjects\Msacco\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            location="C:\Users\Ngetich\AndroidStudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\sngetich\StudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            location="C:\Users\Ngetich\AndroidStudioProjects\Msacco\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\sngetich\StudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            location="C:\Users\Ngetich\AndroidStudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\sngetich\StudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            location="C:\Users\Ngetich\AndroidStudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\sngetich\StudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            location="C:\Users\Ngetich\AndroidStudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\sngetich\StudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="C:\Users\Ngetich\AndroidStudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\sngetich\StudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            location="C:\Users\Ngetich\AndroidStudioProjects\Msacco\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1563692850244"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\Ngetich\AndroidStudioProjects\Msacco\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

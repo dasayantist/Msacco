@@ -68,7 +68,7 @@ public class Premium extends BaseActivity implements PaymentListener, IMainActiv
     Chowder chowder;
     String oid, rid, uid, add, od, ba;
     private int success = 0;
-    private String path = "http://192.168.0.101/zsacco/order.php";
+    private String path = "http://192.168.43.248/zsacco/order.php";
 
     public static boolean isNetworkStatusAvialable(Context context) {
         ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
